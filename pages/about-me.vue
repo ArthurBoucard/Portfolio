@@ -84,11 +84,10 @@
 
     <!-- content -->
     <div class="flex flex-col lg:grid lg:grid-cols-2 h-full w-full">
-
       <div id="left" class="w-full flex flex-col border-right">
 
         <!-- code text -->
-        <div id="code-editor-text" class="flex h-full w-full lg:border-right overflow-scroll">
+        <div id="code-editor-text" class="flex h-full w-full lg:border-right overflow-scroll" @scroll="syncScroll('left')" ref="leftPanel">
           <div class="w-full h-full ml-5 mr-10 lg:my-5">
               <CodeEditorText :text="config.dev.about.sections[currentSection].info[folder].description" />
           </div>
@@ -100,7 +99,7 @@
       <!-- markdown -->
       <div class="hidden lg:block w-full h-full border-right overflow-scroll">
         <div id="right" class="max-w-full h-full flex flex-col overflow-scroll">
-          <div class="h-full overflow-scroll">
+          <div class="h-full overflow-scroll" @scroll="syncScroll('right')" ref="rightPanel">
             <MarkdownViewer :markdownText="config.dev.about.sections[currentSection].info[folder].description" />
           </div>
         </div>
@@ -194,6 +193,8 @@ export default {
       currentSection: 'my-informations',
       folder: 'bio',
       loading: true,
+      leftPanel: null,
+      rightPanel: null,
     }
   },
   /**
@@ -236,6 +237,23 @@ export default {
     showContacts() {
       document.getElementById('contacts').classList.toggle('hidden')
       document.getElementById('section-arrow').classList.toggle('rotate-90'); // rotate arrow
+    },
+    syncScroll(panel) {
+      console.log('scrolling')
+      const leftPanel = this.$refs.leftPanel;
+      const rightPanel = this.$refs.rightPanel;
+
+      if (panel === 'left') {
+        // Calculate the ratio of left scroll position
+        const leftScrollRatio = leftPanel.scrollTop / (leftPanel.scrollHeight - leftPanel.clientHeight);
+        // Set the scroll position of the right panel
+        rightPanel.scrollTop = leftScrollRatio * (rightPanel.scrollHeight - rightPanel.clientHeight);
+      } else {
+        // Calculate the ratio of right scroll position
+        const rightScrollRatio = rightPanel.scrollTop / (rightPanel.scrollHeight - rightPanel.clientHeight);
+        // Set the scroll position of the left panel
+        leftPanel.scrollTop = rightScrollRatio * (leftPanel.scrollHeight - leftPanel.clientHeight);
+      }
     },
   },
   mounted(){
