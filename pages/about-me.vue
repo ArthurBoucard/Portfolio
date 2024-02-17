@@ -87,24 +87,23 @@
 
       <div id="left" class="w-full flex flex-col border-right">
 
-        <!-- text -->
-        <div id="code-editor-text" class="flex h-full w-full lg:border-right overflow-hidden">
-
-          <div class="w-full h-full ml-5 mr-10 lg:my-5 overflow-scroll">
+        <!-- code text -->
+        <div id="code-editor-text" class="flex h-full w-full lg:border-right overflow-scroll">
+          <div class="w-full h-full ml-5 mr-10 lg:my-5">
               <CodeEditorText :text="config.dev.about.sections[currentSection].info[folder].description" />
           </div>
-
-          <!-- scroll bar -->
-          <div id="scroll-bar" class="h-full border-left hidden lg:flex justify-center py-1">
-            <div id="scroll"></div>
-          </div>
-
         </div>
-
       </div>
 
-      <div id="right" class="max-w-full flex flex-col">
-        <!-- TODO: Add Readme visualization -->
+      <!-- TODO: Link both scroll to match text and markdown view -->
+
+      <!-- markdown -->
+      <div class="hidden lg:block w-full h-full border-right overflow-scroll">
+        <div id="right" class="max-w-full h-full flex flex-col overflow-scroll">
+          <div class="h-full overflow-scroll">
+            <MarkdownViewer :markdownText="config.dev.about.sections[currentSection].info[folder].description" />
+          </div>
+        </div>
       </div>
     </div>
 
@@ -184,8 +183,12 @@
 </style>
 
 <script>
+import MarkdownViewer from '~/components/MarkdownViewer.vue'
 
 export default {
+  components: {
+    MarkdownViewer
+  },
   data() {
     return {
       currentSection: 'my-informations',
