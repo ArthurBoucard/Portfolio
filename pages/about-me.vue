@@ -160,10 +160,6 @@
   background-color: #607B96;
 }
 
-#diple {
-  @apply mx-3 w-2 max-w-fit;
-}
-
 .open {
   transform: rotate(90deg);
 }
@@ -224,7 +220,6 @@ export default {
       this.folder = Object.keys(section.info)[0]
 
       document.getElementById('folders-' + section.title).classList.toggle('hidden') // show folders
-      document.getElementById('section-arrow-' + section.title).classList.toggle('rotate-90'); // rotate arrow
     },
     focusCurrentFolder(folder) {
       this.folder = folder.title
