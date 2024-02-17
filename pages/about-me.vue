@@ -89,7 +89,7 @@
         <!-- code text -->
         <div id="code-editor-text" class="flex h-full w-full lg:border-right overflow-scroll" @scroll="syncScroll('left')" ref="leftPanel">
           <div class="w-full h-full ml-5 mr-10 lg:my-5">
-              <CodeEditorText :text="config.dev.about.sections[currentSection].info[folder].description" />
+              <CodeEditorText :fileName="config.dev.about.sections[currentSection].info[folder].title" />
           </div>
         </div>
       </div>
@@ -98,7 +98,7 @@
       <div class="hidden lg:block w-full h-full border-right overflow-scroll">
         <div id="right" class="max-w-full h-full flex flex-col overflow-scroll">
           <div class="h-full overflow-scroll" @scroll="syncScroll('right')" ref="rightPanel">
-            <MarkdownViewer :markdownText="config.dev.about.sections[currentSection].info[folder].description" />
+            <MarkdownViewer :fileName="config.dev.about.sections[currentSection].info[folder].title" />
           </div>
         </div>
       </div>
@@ -237,7 +237,6 @@ export default {
       document.getElementById('section-arrow').classList.toggle('rotate-90'); // rotate arrow
     },
     syncScroll(panel) {
-      console.log('scrolling')
       const leftPanel = this.$refs.leftPanel;
       const rightPanel = this.$refs.rightPanel;
 

@@ -10,19 +10,39 @@
 
     <!-- text -->
     <div class="text-container">
-      <p v-html="text"></p>
+      <pre v-html="markdownText"></pre>
     </div>
   </div>
 </template>
 
 <script>
 
+function readFile(filePath) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    
+    reader.onload = function(event) {
+      resolve(event.target.result); // Resolve with the file content
+    };
+    
+    reader.onerror = function(event) {
+      reject(event.target.error); // Reject with the error
+    };
+    
+    // Read the file as text
+    fetch(filePath)
+      .then(response => response.blob())
+      .then(blob => reader.readAsText(blob))
+      .catch(error => reject(error));
+  });
+}
+
 export default {
   props: {
-    text: {
+    fileName: {
       type: String,
       required: true
-    }
+    },
   },
   data() {
     return {
@@ -39,7 +59,14 @@ export default {
     window.removeEventListener("click", this.updateLines);
   },
   methods: {
-    updateLines() {
+    async updateLines() {
+      try {
+        const filePath = `/markdown/${this.fileName}.md` 
+        this.markdownText = await readFile(filePath)
+      } catch (error) {
+        console.error('Error rendering markdown:', error)
+      }
+
       const textContainer = this.$el.querySelector(".text-container");
       const style = window.getComputedStyle(textContainer);
       const fontSize = parseInt(style.fontSize);
@@ -63,7 +90,12 @@ export default {
 
 .text-container {
   width: 100%;
-  padding-left: 10px;
+  padding-left: 40px;
   word-wrap: break-word;
+}
+
+.text-container pre {
+  margin: 0;
+  white-space: pre-wrap;
 }
 </style>

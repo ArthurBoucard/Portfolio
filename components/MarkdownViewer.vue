@@ -5,13 +5,34 @@
 <script>
 import MarkdownIt from 'markdown-it'
 
+function readFile(filePath) {
+  return new Promise((resolve, reject) => {
+    const reader = new FileReader();
+    
+    reader.onload = function(event) {
+      resolve(event.target.result); // Resolve with the file content
+    };
+    
+    reader.onerror = function(event) {
+      reject(event.target.error); // Reject with the error
+    };
+    
+    // Read the file as text
+    fetch(filePath)
+      .then(response => response.blob())
+      .then(blob => reader.readAsText(blob))
+      .catch(error => reject(error));
+  });
+}
+
 export default {
   props: {
-    markdownText: {
+    fileName: {
       type: String,
       required: true
     }
   },
+  
   data() {
     return {
       renderedMarkdown: this.renderedMarkdown
@@ -26,13 +47,22 @@ export default {
     }
   },
   methods: {
-    renderMarkdown() {
+    async renderMarkdown() {
+      let markdownText = ''
+
+      try {
+        const filePath = `/markdown/${this.fileName}.md` 
+        markdownText = await readFile(filePath)
+      } catch (error) {
+        console.error('Error rendering markdown:', error)
+      }
+
       const md = new MarkdownIt({
         html: true,
         linkify: true,
         typographer: true
       })
-      this.renderedMarkdown = md.render(this.markdownText)
+      this.renderedMarkdown = md.render(markdownText)
     }
   }
 }
