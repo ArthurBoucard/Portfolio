@@ -1,13 +1,10 @@
 <template>
   <div class="code-container flex font-fira_retina text-menu-text">
-    <div class="line-numbers lg:flex flex-col w-32 hidden">
+    <div class="line-numbers lg:flex flex-col w-16 hidden">
 
-      <!-- line numbers and asteriscs -->
+      <!-- line numbers -->
       <div v-for="n in lines" class="grid grid-cols-2 justify-end" :key="n">
-        <span class="col-span-1 mr-3">{{ n }}</span>
-        <div v-if="n == 1" class="col-span-1 flex justify-center">/**</div>
-        <div class="col-span-1 flex justify-center" v-if="n > 1 && n < lines">*</div>
-        <div class="col-span-1 flex justify-center pl-2" v-if="n == lines">*/</div>
+        <span class="col-span-1 mr-1">{{ n }}</span>
       </div>
     </div>
 
