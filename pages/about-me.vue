@@ -16,11 +16,11 @@
           <p v-html="config.dev.about.sections[currentSection].title" class="font-fira_regular text-white text-sm"></p>
         </div>
 
-        <!-- folders -->
+        <!-- files -->
         <div>
           <div v-for="(folder, key, index) in config.dev.about.sections[currentSection].info" :key="key" class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text" @click="focusCurrentFolder(folder)">
             <div class="flex col-span-2 hover:text-white hover:cursor-pointer">
-              <img :src="'/icons/markdown.svg'" alt="" class="mx-4"> <!-- TODO: Add color to the markdown svg (like the folders) -->
+              <img :src="'/icons/markdown' + (index + 1) + '.svg'" alt="" class="mx-4">
               <p :id="folder.title" v-html="key" :class="{ active: isActive(folder.title)}"></p>
             </div>
           </div>
@@ -51,11 +51,11 @@
             <p v-html="section.title" class=" text-white text-sm"></p>
           </div>
 
-          <!-- folders -->
+          <!-- files -->
           <div :id="'folders-' + section.title" class="hidden"> <!-- <div :id="'folders-' + section.title" :class="currentSection == section.title ? 'block' : 'hidden'"> -->
             <div v-for="(folder, key, index) in config.dev.about.sections[section.title].info" :key="key" class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text hover:text-white hover:cursor-pointer" @click="focusCurrentFolder(folder)">
               <div class="flex col-span-2">
-                <img :src="'/icons/markdown.svg'" alt="" class="mx-4"> <!-- TODO: Add color to the markdown svg (like the folders) -->
+                <img :src="'/icons/markdown' + (index + 1) + '.svg'" alt="" class="mx-4">
                 <p :id="folder.title" v-html="key" :class="{ active: isActive(folder.title)}"></p>
               </div>
             </div>
