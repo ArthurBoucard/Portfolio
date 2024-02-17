@@ -124,7 +124,7 @@
 }
 
 #section-icon {
-  @apply my-6 hover:cursor-pointer flex justify-center;
+  /* @apply my-6 hover:cursor-pointer flex justify-center; */
   opacity: 0.4;
 }
 
