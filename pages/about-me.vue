@@ -20,15 +20,8 @@
         <div>
           <div v-for="(folder, key, index) in config.dev.about.sections[currentSection].info" :key="key" class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text" @click="focusCurrentFolder(folder)">
             <div class="flex col-span-2 hover:text-white hover:cursor-pointer">
-              <img id="diple" src="/icons/diple.svg" alt="" :class="{ open: isOpen(folder.title)}">
-              <img :src="'/icons/folder' + (index+1) + '.svg'" alt="" class="mr-3">
+              <img :src="'/icons/markdown.svg'" alt="" class="mx-4"> <!-- TODO: Add color to the markdown svg (like the folders) -->
               <p :id="folder.title" v-html="key" :class="{ active: isActive(folder.title)}"></p>
-            </div>
-            <div v-if="folder.files !== undefined" class="col-span-2">
-              <div v-for="(file, key) in folder.files" :key="key" class="hover:text-white hover:cursor-pointer flex my-2">
-                <img src="/icons/markdown.svg" alt="" class="ml-8 mr-3"/>
-                <p >{{ key }}</p>
-              </div> 
             </div>
           </div>
         </div>
@@ -62,16 +55,8 @@
           <div :id="'folders-' + section.title" class="hidden"> <!-- <div :id="'folders-' + section.title" :class="currentSection == section.title ? 'block' : 'hidden'"> -->
             <div v-for="(folder, key, index) in config.dev.about.sections[section.title].info" :key="key" class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text hover:text-white hover:cursor-pointer" @click="focusCurrentFolder(folder)">
               <div class="flex col-span-2">
-                <img id="diple" src="/icons/diple.svg">
-                <img :src="'icons/folder' + (index+1) + '.svg'" alt="" class="mr-3">
+                <img :src="'/icons/markdown.svg'" alt="" class="mx-4"> <!-- TODO: Add color to the markdown svg (like the folders) -->
                 <p :id="folder.title" v-html="key" :class="{ active: isActive(folder.title)}"></p>
-              </div>
-              <div v-if="folder.files !== undefined" class="col-span-2">
-                <div v-for="(file, key) in folder.files" :key="key" class="hover:text-white hover:cursor-pointer flex my-2">
-                  <img src="/icons/markdown.svg" alt="" class="ml-8 mr-3"/>
-                  <p >{{ key }}</p>
-                </div>
-                
               </div>
             </div>
           </div>
@@ -119,6 +104,7 @@
       </div>
 
       <div id="right" class="max-w-full flex flex-col">
+        <!-- TODO: Add Readme visualization -->
       </div>
     </div>
 
