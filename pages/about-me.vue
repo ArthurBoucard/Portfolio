@@ -12,6 +12,9 @@
 
         <!-- title -->
         <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
+          <p id="section-content-title-explorer" class="font-fira_regular text-white text-sm">Explorer</p>
+        </div>
+        <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
           <img id="section-arrow-menu" src="/icons/arrow.svg" alt="" class="section-arrow mx-3 open">
           <p v-html="config.dev.about.sections[currentSection].title" class="font-fira_regular text-white text-sm"></p>
         </div>
@@ -189,6 +192,13 @@
 
 #section-content #contacts {
   padding: 0px 25px;
+}
+
+#section-content-title-explorer {
+  padding: 0px 25px;
+  opacity: 0.4;
+  font-size: 13px;
+  font-weight: lighter;
 }
 
 </style>
