@@ -7,13 +7,6 @@
 
     <div id="page-menu" class="w-full flex">
 
-      <!-- DESKTOP section icons -->
-      <div id="sections">
-        <div id="section-icon" v-for="section in config.dev.about.sections" :key="section.title" :class="{ active: isSectionActive(section.title)}">
-          <img :id="'section-icon-' + section.title" :src="section.icon" :alt="section.title + '-section'" @click="focusCurrentSection(section)">
-        </div>
-      </div>
-
       <!-- focused section content -->
       <div id="section-content" class="hidden lg:block w-full h-full border-right">
 
@@ -106,74 +99,29 @@
 
     <!-- content -->
     <div class="flex flex-col lg:grid lg:grid-cols-2 h-full w-full">
-      
-      <div id="left" class="w-full flex flex-col border-right">
-        
-        <!-- windows tab desktop -->
-        <div class="tab-height w-full hidden lg:flex border-bot items-center">
-          <div class="flex items-center border-right h-full">
-            <p v-html="config.dev.about.sections[currentSection].title" class="font-fira_regular text-menu-text text-sm px-3"></p>
-            <img src="/icons/close.svg" alt="" class="mx-3">
-          </div>
-        </div>
 
-        <!-- windows tab mobile -->
-        <div id="tab-mobile" class="flex lg:hidden font-fira_retina">
-            <span class="text-white">// </span>
-            <h3 v-html="config.dev.about.sections[currentSection].title" class="text-white px-2"></h3>
-            <span class="text-menu-text"> / </span>
-            <h3 v-html="config.dev.about.sections[currentSection].info[folder].title" class="text-menu-text pl-2"></h3>
-        </div>
-        
+      <div id="left" class="w-full flex flex-col border-right">
+
         <!-- text -->
         <div id="commented-text" class="flex h-full w-full lg:border-right overflow-hidden">
 
           <div class="w-full h-full ml-5 mr-10 lg:my-5 overflow-scroll">
               <CommentedText :text="config.dev.about.sections[currentSection].info[folder].description" />
           </div>
-          
-          <!-- scroll bar -->
-          <div id="scroll-bar" class="h-full border-left hidden lg:flex justify-center py-1">
-            <div id="scroll">
-          </div>
-
-        </div>
-
-      </div>
-      
-    </div>
-
-    <div id="right" class="max-w-full flex flex-col">
-        
-      <!-- windows tab -->
-      <div class="tab-height w-full h-full hidden lg:flex border-bot items-center">
-
-      </div>
-
-      <!-- windows tab mobile -->
-      <div class="tab-height w-full h-full flex-none lg:hidden items-center">
-
-      </div>
-
-        <div id="gists-content" class="flex">
-        
-          <div id="gists" class="flex flex-col lg:px-6 lg:py-4 w-full overflow-hidden">
-            <!-- title -->
-            <h3 class="text-white lg:text-menu-text mb-4 text-sm">// Code snippet showcase:</h3>
-
-            <div class="flex flex-col overflow-scroll">
-              <!-- snippets -->
-              <GistSnippet data-aos="fade-down" v-for="(gist, key) in config.public.dev.gists" :key="key" :id="gist" />
-            </div>
-          </div>
 
           <!-- scroll bar -->
           <div id="scroll-bar" class="h-full border-left hidden lg:flex justify-center py-1">
             <div id="scroll"></div>
           </div>
+
         </div>
+
+      </div>
+
+      <div id="right" class="max-w-full flex flex-col">
       </div>
     </div>
+
   </main>
 </template>
 
@@ -243,23 +191,6 @@
   overflow: hidden;
 }
 
-#gists-content {
-  height: 100%;
-  overflow: hidden;
-}
-
-@media (max-width: 1024px) {
-  #gists-content {
-    height: 100%;
-    padding: 0px 25px;
-    overflow: hidden;
-  }
-
-  #about {
-  min-height: stretch;
-}
-}
-
 .section-arrow {
   transition: 0.1s;
 }
@@ -275,7 +206,7 @@
 export default {
   data() {
     return {
-      currentSection: 'personal-info',
+      currentSection: 'my-informations',
       folder: 'bio',
       loading: true,
     }
@@ -314,10 +245,6 @@ export default {
       // handle if folder belongs to the current section. It happens when you click on a folder from a different section in mobile view.
       this.currentSection = this.config.dev.about.sections[this.currentSection].info[folder.title] ? this.currentSection : Object.keys(this.config.dev.about.sections).find(section => this.config.dev.about.sections[section].info[folder.title])
     },
-    /**
-     * TODO: Hay que crear un método para que cuando se haga click en un folder, se muestren los archivos que contiene. Y si se hace click en un archivo, se muestre el contenido del archivo.
-     * TODO:  Además de girar el icono del diple.
-     */
     toggleFiles() {
       document.getElementById('file-' + this.folder).classList.toggle('hidden')
     },
