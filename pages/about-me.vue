@@ -94,8 +94,6 @@
         </div>
       </div>
 
-      <!-- TODO: Link both scroll to match text and markdown view -->
-
       <!-- markdown -->
       <div class="hidden lg:block w-full h-full border-right overflow-scroll">
         <div id="right" class="max-w-full h-full flex flex-col overflow-scroll">
