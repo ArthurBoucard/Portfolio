@@ -236,7 +236,7 @@ export default {
       document.getElementById('contacts').classList.toggle('hidden')
       document.getElementById('section-arrow').classList.toggle('rotate-90'); // rotate arrow
     },
-    syncScroll(panel) {
+    syncScroll(panel) { // TODO: Fix scrolling bug when scrolled a specific amount it starts auto scrolling
       const leftPanel = this.$refs.leftPanel;
       const rightPanel = this.$refs.rightPanel;
 
