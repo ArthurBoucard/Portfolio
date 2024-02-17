@@ -33,7 +33,6 @@ export default {
         typographer: true
       })
       this.renderedMarkdown = md.render(this.markdownText)
-      console.log(this.renderedMarkdown)
     }
   }
 }
