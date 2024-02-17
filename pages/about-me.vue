@@ -82,9 +82,15 @@
     </div>
     <!-- MENU END -->
 
-    <!-- content -->
+    <!-- left panel -->
     <div class="flex flex-col lg:grid lg:grid-cols-2 h-full w-full">
       <div id="left" class="w-full flex flex-col border-right">
+
+        <!-- title -->
+        <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
+          <img :src="'/icons/markdown.svg'" alt="" class="mx-4">
+          <p v-html="config.dev.about.sections[currentSection].info[folder].title + '.md'" class="font-fira_regular text-white text-sm"></p>
+        </div>
 
         <!-- code text -->
         <div id="code-editor-text" class="flex h-full w-full lg:border-right overflow-scroll" @scroll="syncScroll('left')" ref="leftPanel">
@@ -94,8 +100,16 @@
         </div>
       </div>
 
-      <!-- markdown -->
+      <!-- right panel -->
       <div class="hidden lg:block w-full h-full border-right overflow-scroll">
+
+        <!-- title -->
+        <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
+          <img :src="'/icons/preview.svg'" alt="" class="mx-4">
+          <p v-html="'Preview ' + config.dev.about.sections[currentSection].info[folder].title + '.md'" class="font-fira_regular text-white text-sm"></p>
+        </div>
+
+        <!-- markdown -->
         <div id="right" class="max-w-full h-full flex flex-col overflow-scroll">
           <div class="h-full overflow-scroll" @scroll="syncScroll('right')" ref="rightPanel">
             <MarkdownViewer :fileName="config.dev.about.sections[currentSection].info[folder].title" :update="updateComponents"/>
