@@ -88,7 +88,7 @@
       <div id="left" class="w-full flex flex-col border-right">
 
         <!-- text -->
-        <div id="commented-text" class="flex h-full w-full lg:border-right overflow-hidden">
+        <div id="code-editor-text" class="flex h-full w-full lg:border-right overflow-hidden">
 
           <div class="w-full h-full ml-5 mr-10 lg:my-5 overflow-scroll">
               <CodeEditorText :text="config.dev.about.sections[currentSection].info[folder].description" />
