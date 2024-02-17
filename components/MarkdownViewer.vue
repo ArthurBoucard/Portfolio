@@ -30,7 +30,11 @@ export default {
     fileName: {
       type: String,
       required: true
-    }
+    },
+    update: {
+      type: Boolean,
+      required: true
+    },
   },
   
   data() {
@@ -42,7 +46,7 @@ export default {
     this.renderMarkdown()
   },
   watch: {
-    markdownText: function() {
+    fileName: function() {
       this.renderMarkdown()
     }
   },

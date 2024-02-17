@@ -89,7 +89,7 @@
         <!-- code text -->
         <div id="code-editor-text" class="flex h-full w-full lg:border-right overflow-scroll" @scroll="syncScroll('left')" ref="leftPanel">
           <div class="w-full h-full ml-5 mr-10 lg:my-5">
-              <CodeEditorText :fileName="config.dev.about.sections[currentSection].info[folder].title" />
+              <CodeEditorText :fileName="config.dev.about.sections[currentSection].info[folder].title" :update="updateComponents" />
           </div>
         </div>
       </div>
@@ -98,7 +98,7 @@
       <div class="hidden lg:block w-full h-full border-right overflow-scroll">
         <div id="right" class="max-w-full h-full flex flex-col overflow-scroll">
           <div class="h-full overflow-scroll" @scroll="syncScroll('right')" ref="rightPanel">
-            <MarkdownViewer :fileName="config.dev.about.sections[currentSection].info[folder].title" />
+            <MarkdownViewer :fileName="config.dev.about.sections[currentSection].info[folder].title" :update="updateComponents"/>
           </div>
         </div>
       </div>
@@ -193,6 +193,7 @@ export default {
       loading: true,
       leftPanel: null,
       rightPanel: null,
+      updateComponents: false,
     }
   },
   /**
@@ -227,6 +228,8 @@ export default {
       this.folder = folder.title
       // handle if folder belongs to the current section. It happens when you click on a folder from a different section in mobile view.
       this.currentSection = this.config.dev.about.sections[this.currentSection].info[folder.title] ? this.currentSection : Object.keys(this.config.dev.about.sections).find(section => this.config.dev.about.sections[section].info[folder.title])
+      // update components every time a new folder is focused
+      this.updateComponents = !this.updateComponents
     },
     toggleFiles() {
       document.getElementById('file-' + this.folder).classList.toggle('hidden')

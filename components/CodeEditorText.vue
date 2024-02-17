@@ -43,6 +43,10 @@ export default {
       type: String,
       required: true
     },
+    update: {
+      type: Boolean,
+      required: true
+    },
   },
   data() {
     return {
