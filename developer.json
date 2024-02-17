@@ -1,7 +1,7 @@
 {
-    "name": "Micheal Weaver",
-    "logo_name": "micheal-weaver",
-    "role": "Front-end developer",
+    "name": "Arthur Boucard",
+    "logo_name": "arthur-boucard",
+    "role": "Back-end developer",
     "about": {
         "sections": {
             "professional-info": {
@@ -64,15 +64,15 @@
         "direct": {
             "title": "contacts",
             "sources": {
-                "email": "user@gmail.com",
-                "phone": "+3598246359"
+                "email": "arthur.boucard@hotmail.fr",
+                "phone": "+33 7 86735000"
             }
         },
         "social": {
             "github": {
                 "title": "Github profile",
                 "url": "https://github.com/",
-                "user": "username"
+                "user": "ArthurBoucard"
             },
             "facebook": {
                 "title": "Facebook profile",
