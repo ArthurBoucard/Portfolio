@@ -74,46 +74,81 @@
     },
     "projects": {
         "1": {
-            "title": "_ui-animations",
+            "title": "Thurii",
             "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/ui-animations2.png",
+            "img": "/images/projects/thurii.png",
             "tech": ["Flutter"],
-            "url": "https://github.com/"
+            "url": "https://thurii.fr"
         },
         "2": {
-            "title": "_ai-resources",
+            "title": "Air QUality Monitor",
             "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/ai-resources.png",
-            "tech": ["Gatsby"],
-            "url": "https://github.com/"
+            "img": "/images/projects/air-quality.png",
+            "tech": ["HTML"],
+            "url": "https://github.com/ArthurBoucard/Air-Quality-Monitor"
         },
         "3": {
-            "title": "_worldmap",
+            "title": "Infinite Typing Monkey",
             "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/worldmap.png",
+            "img": "/images/projects/monkey.png",
             "tech": ["Angular"],
-            "url": "https://github.com/"
+            "url": "https://github.com/ArthurBoucard/Infinite-Typing-Monkey"
         },
         "4": {
-            "title": "_ui-animations",
+            "title": "HTop",
             "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/ui-animations.png",
+            "img": "/images/projects/htop.png",
             "tech": ["React"],
-            "url": "https://github.com/"
+            "url": "https://github.com/ArthurBoucard/HTop"
         },
         "5": {
-            "title": "_tetris-game",
+            "title": "Bomberman",
             "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/tetris-game.png",
+            "img": "/images/projects/bomberman.png",
             "tech": ["React"],
-            "url": "https://github.com/"
+            "url": "https://github.com/ArthurBoucard/Bomberman-IndieStudio"
         },
         "6": {
-            "title": "_ethereum",
+            "title": "Redditech",
             "description": "Duis aute irure dolor in velit esse cillum dolore.",
-            "img": "/images/projects/ethereum.png",
+            "img": "/images/projects/redditech.png",
             "tech": ["Vue"],
-            "url": "https://github.com/"
+            "url": "https://github.com/ArthurBoucard/Redditech"
+        },
+        "7": {
+            "title": "Fractal Tree",
+            "description": "Duis aute irure dolor in velit esse cillum dolore.",
+            "img": "/images/projects/fractal.png",
+            "tech": ["Vue"],
+            "url": "https://github.com/ArthurBoucard/Fractal_Tree"
+        },
+        "8": {
+            "title": "Dante Star",
+            "description": "Duis aute irure dolor in velit esse cillum dolore.",
+            "img": "/images/projects/dante.png",
+            "tech": ["Vue"],
+            "url": "https://github.com/ArthurBoucard/Dante_Star"
+        },
+        "9": {
+            "title": "RPG Game",
+            "description": "Duis aute irure dolor in velit esse cillum dolore.",
+            "img": "/images/projects/rpg.png",
+            "tech": ["Vue"],
+            "url": "https://github.com/ArthurBoucard/MyRPG"
+        },
+        "10": {
+            "title": "Sokoban Game",
+            "description": "Duis aute irure dolor in velit esse cillum dolore.",
+            "img": "/images/projects/sokoban.png",
+            "tech": ["Vue"],
+            "url": "https://github.com/ArthurBoucard/MySokoban"
+        },
+        "11": {
+            "title": "Matchstick Game",
+            "description": "Duis aute irure dolor in velit esse cillum dolore.",
+            "img": "/images/projects/matchstick.png",
+            "tech": ["Vue"],
+            "url": "https://github.com/ArthurBoucard/CPE_matchstick"
         }
     }
 }

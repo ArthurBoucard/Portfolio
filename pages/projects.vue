@@ -6,7 +6,7 @@
     </div>
 
     <!-- section title (mobile) -->
-    <div id="section-content-title" class="flex lg:hidden" @click="hiddeSection()">
+    <div id="section-content-title" class="flex lg:hidden" @click="hiddenSection()">
       <img class="section-arrow" src="/icons/arrow.svg">
       <p class="font-fira_regular text-white text-sm">projects</p>
     </div>
@@ -66,9 +66,9 @@
         <div id="project" v-for="(project, key, index) in projects" :key="key" class="lg:mx-5">
           <!-- title -->
           <span class="flex text-sm my-3">
-            <h3 v-if="index == null" class="text-purplefy font-fira_bold mr-3">Project {{ key + 1 }}</h3>
-            <h3 v-else class="text-purplefy font-fira_bold mr-3">Project {{ index + 1 }}</h3>
-            <h4 class="font-fira_retina text-menu-text"> // {{ project.title }}</h4>
+            <h3 v-if="index == null" class="text-purplefy font-fira_bold mr-3">{{ project.title }}</h3>
+            <h3 v-else class="text-purplefy font-fira_bold mr-3">{{ project.title }}</h3>
+            <!-- <h4 class="font-fira_retina text-menu-text"> // {{ project.tech }}</h4> -->
           </span>
 
           <!-- info -->
@@ -285,27 +285,27 @@ export default {
         document.getElementById('projects-case').classList.remove('grid');
         document.getElementById('not-found').classList.remove('hidden');
         
-      }else{
+      } else {
         // set grid to projects-case
         document.getElementById('projects-case').classList.add('grid');
         document.getElementById('not-found').classList.add('hidden');
       }
       
     },
-    hiddeSection() {
+    hiddenSection() {
       document.getElementById('filter-menu').classList.toggle('hidden');
       document.getElementsByClassName('section-arrow')[0].classList.toggle('rotate-90');
     },
     /**
      * * Filter projects by techs
-     * * Each filter has to be an string with tech name that matches with project.tech !!
+     * * Each filter has to be a string with tech name that matches with project.tech !!
      * ? If you want to filter projects that matches with ALL tech in filters, use 'every' instead of 'some'
      * @param {*} filters is an array with techs names.
      */
     filterProjectsBy(filters) {
       const projectArray = Object.values(this.config.public.dev.projects);
       return projectArray.filter(project => {
-        return filters.some(filter => project.tech.includes(filter)); // change here your condition 'some' or 'every'
+        return filters.some(filter => project.tech.includes(filter));
       });
     },
   },
