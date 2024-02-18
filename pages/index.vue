@@ -40,7 +40,7 @@
 		</section>
 
 		<section data-aos="fade-up" class="game" v-if="!isMobile">
-			<SnakeGame /> <!-- TODO: Replace with a custom chatbot to answer question about me (ChatterBot in python) -->
+      <!-- TODO: add terminal or chatbot -->
 		</section>
 
 	</main>
@@ -280,6 +280,8 @@
 </style>
 
 <script>
+import VueTerminal from '~/components/VueTerminal.vue'
+
 export default {
   name: 'Hello',
   setup() {
@@ -295,12 +297,10 @@ export default {
     }
   },
   mounted() {
-    // Detectamos si es mobile
     if (window.innerWidth <= 1024) {
       this.isMobile = true
     }
 
-    // Escuchamos los cambios de tamaño de pantalla
     window.addEventListener('resize', this.handleResize)
 
     // When the component is mounted, we can remove the loader.
