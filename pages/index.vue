@@ -16,11 +16,8 @@
 			</div>
 
 			<div id="info">
-				<span class="action">
-					// complete the game to continue
-				</span>
 				<span :class="{hide: isMobile}">
-					// you can also see it on my Github page
+					// you can also see this project and more on my Github page
 				</span>
 				<span :class="{hide: !isMobile}">
 					// find my profile on Github:
@@ -43,7 +40,7 @@
 		</section>
 
 		<section data-aos="fade-up" class="game" v-if="!isMobile">
-			<SnakeGame />
+			<SnakeGame /> <!-- TODO: Replace with a custom chatbot to answer question about me (ChatterBot in python) -->
 		</section>
 
 	</main>
