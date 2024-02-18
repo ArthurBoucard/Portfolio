@@ -280,8 +280,6 @@
 </style>
 
 <script>
-import VueTerminal from '~/components/VueTerminal.vue'
-
 export default {
   name: 'Hello',
   setup() {
