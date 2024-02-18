@@ -40,7 +40,7 @@
 		</section>
 
 		<section data-aos="fade-up" class="game" v-if="!isMobile">
-      <!-- TODO: add terminal or chatbot -->
+      <!-- TODO: add terminal or chatbot or link to wakatime (get realtime info of if I'm coding) -->
 		</section>
 
 	</main>
