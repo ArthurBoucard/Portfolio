@@ -88,7 +88,15 @@ export default {
 
 #nav-link-mobile {
   border-bottom: 1px solid #1E2D3D;
-  @apply text-menu-text font-fira_retina px-6 py-4 flex items-center;
+  --tw-text-opacity: 1;
+  color: rgb(96 123 150 / var(--tw-text-opacity));
+  font-family: Fira Code Retina;
+  padding-left: 1.5rem/* 24px */;
+  padding-right: 1.5rem/* 24px */;
+  padding-top: 1rem/* 16px */;
+  padding-bottom: 1rem/* 16px */;
+  display: flex;
+  align-items: center;
 }
 
 #nav-link-mobile.active {

@@ -141,7 +141,11 @@
 }
 
 #section-icon {
-  /* @apply my-6 hover:cursor-pointer flex justify-center; */
+  margin-top: 1.5rem/* 24px */;
+  margin-bottom: 1.5rem/* 24px */;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
   opacity: 0.4;
 }
 

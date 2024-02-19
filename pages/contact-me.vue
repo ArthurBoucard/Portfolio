@@ -169,7 +169,6 @@ export default {
 }
 
 .submenu .title h3 {
-  /* @apply font-fira_regular; */
   color: white;
   font-size: 16px;
 }

@@ -34,12 +34,26 @@
 
 #nav-link {
   border-right: 1px solid #1E2D3D;
-  @apply text-menu-text font-fira_retina px-6 h-full flex items-center;
+  --tw-text-opacity: 1;
+  color: rgb(96 123 150 / var(--tw-text-opacity));
+  font-family: Fira Code Retina;
+  padding-left: 1.5rem/* 24px */;
+  padding-right: 1.5rem/* 24px */;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 #nav-link-contact {
   border-left: 1px solid #1E2D3D;
-  @apply text-menu-text font-fira_retina px-6 h-full flex items-center;
+  --tw-text-opacity: 1;
+  color: rgb(96 123 150 / var(--tw-text-opacity));
+  font-family: Fira Code Retina;
+  padding-left: 1.5rem/* 24px */;
+  padding-right: 1.5rem/* 24px */;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 #nav-link:hover, #nav-link-contact:hover {
@@ -49,7 +63,14 @@
 
 #nav-logo {
   border-right: 1px solid #1E2D3D;
-  @apply text-menu-text font-fira_retina px-6 h-full flex items-center;
+  --tw-text-opacity: 1;
+  color: rgb(96 123 150 / var(--tw-text-opacity));
+  font-family: Fira Code Retina;
+  padding-left: 1.5rem/* 24px */;
+  padding-right: 1.5rem/* 24px */;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 
 #nav-logo:hover {
@@ -65,7 +86,8 @@
 #nav-logo.router-link-active {
   border-right: 1px solid #1E2D3D;
   border-bottom: none;
-  @apply text-menu-text;
+  --tw-text-opacity: 1;
+  color: rgb(96 123 150 / var(--tw-text-opacity));
 }
 
 #navbar > nav {
