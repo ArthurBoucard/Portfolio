@@ -74,19 +74,23 @@
           <!-- info -->
           <div id="project-card" class="flex flex-col">
             <div id="window">
-              <div class="absolute flex right-3 top-3">
-                <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/filled/' + tech + '.svg'" alt="" class="w-6 h-6 mx-1 hover:opacity-75">
-              </div>
               <img id="showcase" :src="project.img" alt="" class="">
             </div>
 
             <div class="pb-8 pt-6 px-6 border-top">
-              <p class="text-menu-text font-fira_retina text-sm mb-5">
-                {{ project.description }}
-              </p>
-              <a id="view-button" :href="project.url" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
-                  view-project
-              </a>
+              <div>
+                <p class="text-menu-text font-fira_retina text-sm mb-5">
+                  {{ project.description }}
+                </p>
+                <div class="flex justify-between items-center">
+                  <a id="view-button" :href="project.url" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
+                    view-project
+                  </a>
+                  <div class="flex">
+                    <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/' + tech + '.svg'" alt="" class="w-6 h-6 mx-1 hover:opacity-75">
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -254,7 +258,7 @@ export default {
   },
   data() {
     return {
-      techs: ['React', 'HTML', 'CSS', 'Vue', 'Angular', 'Gatsby', 'Flutter'],
+      techs: ['PHP', 'SQL', 'Arduino', 'C++', 'C', 'Python', 'Vue', 'React-Native'],
       filters: ['all'],
       projects: '',
       loading: true,
