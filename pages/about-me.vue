@@ -37,7 +37,7 @@
         <div id="contact-sources" class="hidden lg:flex lg:flex-col my-2">
           <div v-for="(source, key) in config.dev.contacts.direct.sources" :key="key" class="flex items-center mb-2">
             <img :src="'/icons/' + key + '.svg'" alt="" class="mx-4">
-            <a v-html="source" href="/" class="font-fira_retina text-menu-text hover:text-white"></a>
+            <a v-html="source" :href="getLink(key, source)" class="font-fira_retina text-menu-text hover:text-white"></a>
           </div>
         </div>
 
@@ -76,7 +76,7 @@
         <div id="contacts" class="hidden">
           <div v-for="(source, key) in config.dev.contacts.direct.sources" :key="key" class="flex items-center my-2">
             <img :src="'/icons/' + key + '.svg'" alt="">
-            <a v-html="source" href="/" class="font-fira_retina text-menu-text hover:text-white ml-4"></a>
+            <a v-html="source" :href="getLink(key, source)" class="font-fira_retina text-menu-text hover:text-white"></a>
           </div>
         </div>
 
@@ -277,6 +277,16 @@ export default {
         const rightScrollRatio = rightPanel.scrollTop / (rightPanel.scrollHeight - rightPanel.clientHeight);
         // Set the scroll position of the left panel
         leftPanel.scrollTop = rightScrollRatio * (leftPanel.scrollHeight - leftPanel.clientHeight);
+      }
+    },
+    getLink(key, source) {
+      // Determine the link based on the type of source
+      if (key === 'email') {
+        return 'mailto:' + source;
+      } else if (key === 'phone') {
+        return 'tel:' + source;
+      } else {
+        return '/';
       }
     },
   },

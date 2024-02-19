@@ -32,7 +32,7 @@
 					<span class="operator">
 						=
 					</span>
-					<a class="string" :href="'https://github.com/' + config.public.dev.contacts.social.github.user">
+					<a class="string" target="_blank" :href="'https://github.com/' + config.public.dev.contacts.social.github.user">
 						"https://github.com/{{ config.public.dev.contacts.social.github.user }}"
 					</a>
 				</p>
