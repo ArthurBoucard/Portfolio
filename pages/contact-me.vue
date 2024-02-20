@@ -34,7 +34,7 @@
         <div id="links">
           <div v-for="(source, key) in contact.find_me_also_in.sources" :key="key" class="link">
             <img src="/icons/link.svg">
-            <a :href="source.url + source.user" class="font-fira_retina text-menu-text hover:text-white" target="_blank">{{ source.title }}</a>
+            <a :href="source.url" class="font-fira_retina text-menu-text hover:text-white" target="_blank">{{ source.title }}</a>
           </div>
         </div>
       </div>

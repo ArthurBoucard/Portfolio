@@ -7,21 +7,18 @@
                 find me in:
             </span>
             <div id="social-icons" class="flex">
-                <NuxtLink :to="social.twitter.url + social.twitter.user" target="_blank" class="flex justify-center items-center">
-                    <img src="/icons/social/twitter.svg"/>
+                <NuxtLink :to="social.linkedin.url" target="_blank" class="flex justify-center items-center">
+                    <img src="/icons/social/linkedin.svg"/>
                 </NuxtLink>
-                <NuxtLink :to="social.facebook.url + social.facebook.user" target="_blank" class="flex justify-center items-center">
-                    <img src="/icons/social/facebook.svg"/>
-                </NuxtLink>
-                <NuxtLink :to="social.github.url + social.github.user" target="_blank" class="flex md:hidden justify-center items-center">
+                <NuxtLink :to="social.github.url" target="_blank" class="flex md:hidden justify-center items-center">
                 <img src="/icons/social/github.svg"/>
             </NuxtLink>
             </div>
         </div>
 
         <!-- github user -->
-        <NuxtLink :to="social.github.url + social.github.user" target="_blank" class="hidden md:flex items-center px-5 border-left">
-            @{{ social.github.user }}
+        <NuxtLink :to="social.github.url" target="_blank" class="hidden md:flex items-center px-5 border-left">
+            @{{ social.github.username }}
             <img src="/icons/social/github.svg"/>
         </NuxtLink>
 
