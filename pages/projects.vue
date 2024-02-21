@@ -43,8 +43,6 @@
 
       <!-- windows tab mobile -->
       <div id="tab" class="flex lg:hidden items-center">
-          <span class="text-white"> // </span>
-          <p class="font-fira_regular text-white text-sm px-3">projects</p>
           <span class="text-menu-text"> / </span>
           <p v-for="filter in filters" :key="filter" class="font-fira_regular text-menu-text text-sm px-3">{{ filter }};</p>
       </div>
@@ -92,7 +90,9 @@
                 </div>
               </div>
             </div>
+
           </div>
+
         </div>
       </div>
   </div>
