@@ -15,8 +15,6 @@
   </a>
 </p>
 
-## 🚨 Forking this repo
+## 🚨 Credits
 
-Feel free to fork this repository and make it your own! You can use it as a starting point for your own portfolio website. However, please note that the effort and time deserves to be recognized and *plagiarism is a bad practice*. If you use this project, we would greatly appreciate it if you give credits to the designer <a href="https://www.behance.net/darelova" target="_blank">@darelova</a> and the developer <a href="https://github.com/alexdeploy">@alexdeploy</a>, or linking <a href="https://github.com/alexdeploy/developer-portfolio-v2">this repo</a>.
-
-Thanks 🤘 and enjoy it!
+Credits to the designer <a href="https://www.behance.net/darelova" target="_blank">@darelova</a> and the developer <a href="https://github.com/alexdeploy">@alexdeploy</a>, link to the repo <a href="https://github.com/alexdeploy/developer-portfolio-v2"></a>.
