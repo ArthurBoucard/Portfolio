@@ -66,7 +66,7 @@
           <span class="flex text-sm my-3">
             <h3 v-if="index == null" class="text-purplefy font-fira_bold mr-3">{{ project.title }}</h3>
             <h3 v-else class="text-purplefy font-fira_bold mr-3">{{ project.title }}</h3>
-            <!-- <h4 class="font-fira_retina text-menu-text"> // {{ project.tech }}</h4> -->
+            <h4 class="font-fira_retina text-menu-text"> // {{ project.type }}</h4>
           </span>
 
           <!-- info -->
