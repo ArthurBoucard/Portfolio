@@ -270,7 +270,7 @@ export default {
       document.getElementById('contacts').classList.toggle('hidden')
       document.getElementById('section-arrow').classList.toggle('rotate-90'); // rotate arrow
     },
-    syncScroll(panel) { // TODO: Fix scrolling bug when scrolled a specific amount it starts auto scrolling
+    syncScroll(panel) {
       const leftPanel = this.$refs.leftPanel;
       const rightPanel = this.$refs.rightPanel;
 
@@ -278,12 +278,12 @@ export default {
         // Calculate the ratio of left scroll position
         const leftScrollRatio = leftPanel.scrollTop / (leftPanel.scrollHeight - leftPanel.clientHeight);
         // Set the scroll position of the right panel
-        rightPanel.scrollTop = leftScrollRatio * (rightPanel.scrollHeight - rightPanel.clientHeight);
+        rightPanel.scrollTop = Math.round(leftScrollRatio * (rightPanel.scrollHeight - rightPanel.clientHeight));
       } else {
         // Calculate the ratio of right scroll position
         const rightScrollRatio = rightPanel.scrollTop / (rightPanel.scrollHeight - rightPanel.clientHeight);
         // Set the scroll position of the left panel
-        leftPanel.scrollTop = rightScrollRatio * (leftPanel.scrollHeight - leftPanel.clientHeight);
+        leftPanel.scrollTop = Math.round(rightScrollRatio * (leftPanel.scrollHeight - leftPanel.clientHeight));
       }
     },
     getLink(key, source) {
