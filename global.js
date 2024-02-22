@@ -1,3 +1,3 @@
 export const globalState = {
-  selectedLanguage: 'en'
-};
+  selectedLanguage: process.client ? localStorage.getItem('selectedLanguage') || 'en' : 'en',
+}

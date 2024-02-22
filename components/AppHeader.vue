@@ -8,15 +8,15 @@
         </NuxtLink>
 
         <NuxtLink id="nav-link" to="/" :class="{ active: isActive('/') }">
-          {{ config.text.titles._hello[selectedLanguage] }}
+          {{ config.text.AppHeader._hello[selectedLanguage] }}
         </NuxtLink>
 
         <NuxtLink id="nav-link" to="/about-me" :class="{ active: isActive('/about-me') }">
-          {{ config.text.titles._about[selectedLanguage] }}
+          {{ config.text.AppHeader._about[selectedLanguage] }}
         </NuxtLink>
 
         <NuxtLink id="nav-link" to="/projects" :class="{ active: isActive('/projects') }">
-          {{ config.text.titles._projects[selectedLanguage] }}
+          {{ config.text.AppHeader._projects[selectedLanguage] }}
         </NuxtLink>
       </div>
 
@@ -29,7 +29,7 @@
         </NuxtLink>
 
         <NuxtLink id="nav-link-contact" to="/contact-me" :class="{ active: isActive('/contact-me')}">
-          {{ config.text.titles._contact[selectedLanguage] }}
+          {{ config.text.AppHeader._contact[selectedLanguage] }}
         </NuxtLink>
       </div>
     
@@ -122,12 +122,10 @@
 </style>
 
 <script>
-import { globalState } from '@/global';
-
 export default {
   data() {
     return {
-      selectedLanguage: globalState.selectedLanguage
+      selectedLanguage: localStorage.getItem('selectedLanguage') || 'en',
     }
   },
   computed: {
@@ -145,10 +143,10 @@ export default {
   },
   methods: {
     setLanguage(language) {
-      globalState.selectedLanguage = language;
-      this.selectedLanguage = globalState.selectedLanguage;
+      location.reload(); // Reloads the current page
+      localStorage.setItem('selectedLanguage', language);
+      this.selectedLanguage = localStorage.getItem('selectedLanguage');
     },
   }
 };
-
 </script>

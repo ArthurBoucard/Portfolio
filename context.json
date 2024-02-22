@@ -1,5 +1,5 @@
 {
-    "titles": {
+    "AppHeader": {
         "_hello": {
             "fr": "_bienvenue",
             "en": "_hello"
@@ -15,6 +15,12 @@
         "_contact": {
             "fr": "_contact",
             "en": "_contact"
+        }
+    },
+    "AppFooter": {
+        "findme": {
+            "fr": "retrouvez-moi sur:",
+            "en": "find me in:"
         }
     }
 }
