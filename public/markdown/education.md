@@ -1,21 +1,24 @@
-## Education
-
-### [Degree Name]
-- **Institution:** [Name of Institution]
-- **Location:** [City, Country]
-- **Date:** [Month, Year] - [Month, Year]
-- **GPA:** [Your GPA, if applicable]
-
-#### Description:
-[Provide a brief description of your degree program, coursework, and any relevant projects or achievements.]
+## 🌟 Education
 
 ---
 
-### [Degree Name]
-- **Institution:** [Name of Institution]
-- **Location:** [City, Country]
-- **Date:** [Month, Year] - [Month, Year]
-- **GPA:** [Your GPA, if applicable]
+![Epitech's logo](../images/markdown/epitech.png)
+
+### 🎓 Expert in the technologies of informations
+- **Institution:** Epitech
+- **Location:** Lyon, France
+- **Date:** 2019 - 2024
+
+> Epitech offers a 5-year master's program where you learn how programming works through nearly 80 projects. You learn how to work in teams and how to adapt to almost every situation you may encounter in the industry world.
+
+---
+
+![RUC's logo](../images/markdown/ruc.png)
+
+### ✈️ Study Abroad - Erasmus
+- **Institution:** Roskilde University
+- **Location:** Roskilde, Denmark
+- **Date:** 2023
 
 #### Description:
-[Provide a brief description of your degree program, coursework, and any relevant projects or achievements.]
+> At Roskilde University, I participated in a year-long international program. Through diverse coursework and collaborative projects, I gained practical skills but also got the opportunity to discover more about Denmark and it's culture.

@@ -208,10 +208,10 @@ export default {
 
 /* Blockquotes */
 .markdown-content blockquote {
-  padding: 10px 20px;
+  padding: 0px 20px;
   margin: 0 0 20px;
   font-size: 17.5px;
-  border-left: 5px solid #f8f9fa;
+  border-left: 4px solid #607B96;
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -241,7 +241,7 @@ export default {
   margin-top: 1em;
   margin-bottom: 1em;
   border: none;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #607B96;
 }
 
 /* Inline code */
