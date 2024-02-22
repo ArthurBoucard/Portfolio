@@ -125,7 +125,7 @@
 export default {
   data() {
     return {
-      selectedLanguage: localStorage.getItem('selectedLanguage') || 'en',
+      selectedLanguage: localStorage.getItem('selectedLanguage') || 'en'
     }
   },
   computed: {

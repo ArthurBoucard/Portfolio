@@ -13,19 +13,27 @@
     <!-- mobile menu -->
       <div id="menu" class="bg-mobile-menu-blue z-10 hidden">
         <NuxtLink id="nav-link-mobile" to="/" :class="{ active: isActive('/') }" @click="toggleMobileMenu()">
-          _hello
+          {{ config.text.AppHeader._hello[selectedLanguage] }}
         </NuxtLink>
   
         <NuxtLink id="nav-link-mobile" to="/about-me" :class="{ active: isActive('/about-me') }" @click="toggleMobileMenu()">
-          _about-me
+          {{ config.text.AppHeader._about[selectedLanguage] }}
         </NuxtLink>
   
         <NuxtLink id="nav-link-mobile" to="/projects" :class="{ active: isActive('/projects') }" @click="toggleMobileMenu()">
-          _projects
+          {{ config.text.AppHeader._projects[selectedLanguage] }}
         </NuxtLink>
 
         <NuxtLink id="nav-link-mobile" to="/contact-me" :class="{ active: isActive('/contact-me') }" @click="toggleMobileMenu()">
-          _contact-me
+          {{ config.text.AppHeader._contact[selectedLanguage] }}
+        </NuxtLink>
+
+        <NuxtLink id="nav-link-mobile" @click="setLanguage('fr')">
+          <img id="language-fr" src="/icons/languages/fr.svg" alt="fr" class="w-5 h-5 mx-4">
+        </NuxtLink>
+
+        <NuxtLink id="nav-link-mobile" @click="setLanguage('en')">
+          <img id="language-en" src="/icons/languages/en.svg" alt="en" class="w-5 h-5 mx-4">
         </NuxtLink>
     </div>
 
@@ -36,6 +44,7 @@
 export default {
   data(){
     return {
+      selectedLanguage: localStorage.getItem('selectedLanguage') || 'en',
       menuOpen: false
     }
   },
@@ -69,7 +78,12 @@ export default {
         document.getElementsByTagName('main')[0].style.display = 'flex';
         this.menuOpen ? this.menuOpen = false : this.menuOpen = true
       }
-    }
+    },
+    setLanguage(language) {
+      location.reload(); // Reloads the current page
+      localStorage.setItem('selectedLanguage', language);
+      this.selectedLanguage = localStorage.getItem('selectedLanguage');
+    },
   },
   computed: {
     // Set active class to current page link
