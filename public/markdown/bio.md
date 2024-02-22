@@ -1,5 +1,7 @@
 ## 🌟 About Me
 
+---
+
 # 💻 Arthur Boucard - Freelance Back End Developer
 
 <div style="display: flex; align-items: center;">
