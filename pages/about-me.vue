@@ -105,7 +105,7 @@
       </div>
 
       <!-- right panel -->
-      <div class="hidden lg:block w-full h-full border-right overflow-scroll">
+      <div>
 
         <!-- title -->
         <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
@@ -294,6 +294,11 @@ export default {
         return '/';
       }
     },
+  },
+  watch: {
+    updateComponents: function(newVal) {
+      // update code-editor div
+    }
   },
   mounted(){
     this.loading = false

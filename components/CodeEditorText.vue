@@ -10,7 +10,7 @@
 
     <!-- text -->
     <div class="text-container">
-      <pre v-html="markdownText"></pre>
+      <pre>{{ markdownText }}</pre>
     </div>
   </div>
 </template>
