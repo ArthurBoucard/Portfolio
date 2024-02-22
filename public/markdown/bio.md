@@ -33,3 +33,10 @@ My professional journey is marked by adaptability to various technologies, a str
 - Project management
 - Leadership
 
+<br>
+
+---
+
+<br>
+
+## 💡 I invite you to go check out my Projects !
