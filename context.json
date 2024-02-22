@@ -13,14 +13,48 @@
             "en": "_projects"
         },
         "_contact": {
-            "fr": "_contact",
-            "en": "_contact"
+            "fr": "_contact-moi",
+            "en": "_contact-me"
         }
     },
     "AppFooter": {
         "findme": {
             "fr": "retrouvez-moi sur:",
             "en": "find me in:"
+        }
+    },
+    "Contact": {
+        "title": {
+            "fr": "_contactez-moi",
+            "en": "_contact-me"
+        },
+        "subtitle": {
+            "contacts": {
+                "fr": "contacts",
+                "en": "contacts"
+            },
+            "findme": {
+                "fr": "retrouvez-moi-aussi-sur",
+                "en": "find-me-also-in"
+            }
+        },
+        "form": {
+            "name": {
+                "fr": "_nom",
+                "en": "_name"
+            },
+            "email": {
+                "fr": "_email",
+                "en": "_email"
+            },
+            "message": {
+                "fr": "_message",
+                "en": "_message"
+            },
+            "submit": {
+                "fr": "envoyer",
+                "en": "submit-message"
+            }
         }
     }
 }
