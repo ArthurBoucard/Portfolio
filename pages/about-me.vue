@@ -105,7 +105,7 @@
       </div>
 
       <!-- right panel -->
-      <div class="w-full h-full border-right overflow-scroll">
+      <div id="right" class="w-full h-full border-right">
 
         <!-- title -->
         <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
@@ -117,9 +117,11 @@
         <div id="right" class="max-w-full h-full flex flex-col overflow-scroll">
           <div class="h-full overflow-scroll" @scroll="syncScroll('right')" ref="rightPanel">
             <MarkdownViewer :fileName="config.dev.about.sections[currentSection].info[folder].title" :update="updateComponents"/>
+            <br><br>
           </div>
         </div>
       </div>
+
     </div>
 
   </main>
