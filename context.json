@@ -1,0 +1,20 @@
+{
+    "titles": {
+        "_hello": {
+            "fr": "_bienvenue",
+            "en": "_hello"
+        },
+        "_about": {
+            "fr": "_qui-suis-je",
+            "en": "_about-me"
+        },
+        "_projects": {
+            "fr": "_projets",
+            "en": "_projects"
+        },
+        "_contact": {
+            "fr": "_contact",
+            "en": "_contact"
+        }
+    }
+}

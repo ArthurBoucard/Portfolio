@@ -1,4 +1,5 @@
 const config = require('./developer.json')
+const context = require('./context.json')
 const siteTitle = `${config.name} | ${config.role}`
 
 
@@ -76,7 +77,8 @@ export default defineNuxtConfig({
     // Keys within public are also exposed client-side
     public: {
       apiBase: '/api',
-      dev: config
+      dev: config,
+      text: context
     }
   }
 })

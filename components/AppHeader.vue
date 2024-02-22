@@ -8,28 +8,28 @@
         </NuxtLink>
 
         <NuxtLink id="nav-link" to="/" :class="{ active: isActive('/') }">
-          _hello
+          {{ config.text.titles._hello[selectedLanguage] }}
         </NuxtLink>
 
         <NuxtLink id="nav-link" to="/about-me" :class="{ active: isActive('/about-me') }">
-          _about-me
+          {{ config.text.titles._about[selectedLanguage] }}
         </NuxtLink>
 
         <NuxtLink id="nav-link" to="/projects" :class="{ active: isActive('/projects') }">
-          _projects
+          {{ config.text.titles._projects[selectedLanguage] }}
         </NuxtLink>
       </div>
 
       <div class="flex">
-        <NuxtLink id="nav-link-contact">
+        <NuxtLink id="nav-link-language" @click="setLanguage('fr')">
           <img id="language-fr" src="/icons/languages/fr.svg" alt="fr" class="w-5 h-5 mx-4">
         </NuxtLink>
-        <NuxtLink id="nav-link-contact">
+        <NuxtLink id="nav-link-language" @click="setLanguage('en')">
           <img id="language-en" src="/icons/languages/en.svg" alt="en" class="w-5 h-5 mx-4">
         </NuxtLink>
 
         <NuxtLink id="nav-link-contact" to="/contact-me" :class="{ active: isActive('/contact-me')}">
-          _contact-me
+          {{ config.text.titles._contact[selectedLanguage] }}
         </NuxtLink>
       </div>
     
@@ -102,8 +102,11 @@
   font-size: 13px;
 }
 
-#language-selection {
+#nav-link-language {
   border-left: 1px solid #1E2D3D;
+  --tw-text-opacity: 1;
+  color: rgb(96 123 150 / var(--tw-text-opacity));
+  font-family: Fira Code Retina;
   padding-left: 1.5rem/* 24px */;
   padding-right: 1.5rem/* 24px */;
   height: 100%;
@@ -111,7 +114,7 @@
   align-items: center;
 }
 
-#language-selection:hover, #language-selection-contact:hover {
+#nav-link-language:hover {
   background-color: #1e2d3d74;
   color: white;
 }
@@ -134,6 +137,16 @@ export default {
       config
     }
   },
+  data() {
+    return {
+      selectedLanguage: 'en'
+    };
+  },
+  methods: {
+    setLanguage(language) {
+      this.selectedLanguage = language;
+    }
+  }
 };
 
 </script>
