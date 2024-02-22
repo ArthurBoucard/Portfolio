@@ -1,33 +1,40 @@
 <template>
-    <header id="navbar" class="w-full hidden lg:flex flex-col">
-      <nav class="w-full flex justify-between border-bot">
+  <header id="navbar" class="w-full hidden lg:flex flex-col">
+    <nav class="w-full flex justify-between border-bot">
 
-          <div class="flex">
-            <NuxtLink id="nav-logo" to="/">
-              {{ config.dev.logo_name }}
-            </NuxtLink>
+      <div class="flex">
+        <NuxtLink id="nav-logo" to="/">
+          {{ config.dev.logo_name }}
+        </NuxtLink>
 
-            <NuxtLink id="nav-link" to="/" :class="{ active: isActive('/') }">
-              _hello
-            </NuxtLink>
-  
-            <NuxtLink id="nav-link" to="/about-me" :class="{ active: isActive('/about-me') }">
-              _about-me
-            </NuxtLink>
-  
-            <NuxtLink id="nav-link" to="/projects" :class="{ active: isActive('/projects') }">
-              _projects
-            </NuxtLink>
-          </div>
+        <NuxtLink id="nav-link" to="/" :class="{ active: isActive('/') }">
+          _hello
+        </NuxtLink>
 
-          <NuxtLink id="nav-link-contact" to="/contact-me" :class="{ active: isActive('/contact-me')}">
-            _contact-me
-          </NuxtLink>
-      
-      </nav>
+        <NuxtLink id="nav-link" to="/about-me" :class="{ active: isActive('/about-me') }">
+          _about-me
+        </NuxtLink>
 
-    </header>
+        <NuxtLink id="nav-link" to="/projects" :class="{ active: isActive('/projects') }">
+          _projects
+        </NuxtLink>
+      </div>
 
+      <div class="flex">
+        <NuxtLink id="nav-link-contact">
+          <img id="language-fr" src="/icons/languages/fr.svg" alt="fr" class="w-5 h-5 mx-4">
+        </NuxtLink>
+        <NuxtLink id="nav-link-contact">
+          <img id="language-en" src="/icons/languages/en.svg" alt="en" class="w-5 h-5 mx-4">
+        </NuxtLink>
+
+        <NuxtLink id="nav-link-contact" to="/contact-me" :class="{ active: isActive('/contact-me')}">
+          _contact-me
+        </NuxtLink>
+      </div>
+    
+    </nav>
+  </header>
 </template>
 
 <style>
@@ -93,6 +100,20 @@
 #navbar > nav {
   height: 45px;
   font-size: 13px;
+}
+
+#language-selection {
+  border-left: 1px solid #1E2D3D;
+  padding-left: 1.5rem/* 24px */;
+  padding-right: 1.5rem/* 24px */;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+#language-selection:hover, #language-selection-contact:hover {
+  background-color: #1e2d3d74;
+  color: white;
 }
 
 </style>
