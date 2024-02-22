@@ -97,7 +97,7 @@
         </div>
 
         <!-- code text -->
-        <div id="code-editor-text" class="flex h-full w-full lg:border-right overflow-scroll" @scroll="syncScroll('left')" ref="leftPanel">
+        <div id="code-editor-text" class="hidden lg:block h-full w-full lg:border-right overflow-scroll" @scroll="syncScroll('left')" ref="leftPanel">
           <div class="w-full h-full ml-5 mr-10 lg:my-5">
               <CodeEditorText :key="updateComponents" :fileName="config.dev.about.sections[currentSection].info[folder].title" :update="updateComponents" />
           </div>
@@ -105,7 +105,7 @@
       </div>
 
       <!-- right panel -->
-      <div>
+      <div class="w-full h-full border-right overflow-scroll">
 
         <!-- title -->
         <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
