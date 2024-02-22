@@ -122,8 +122,14 @@
 </style>
 
 <script>
+import { globalState } from '@/global';
 
 export default {
+  data() {
+    return {
+      selectedLanguage: globalState.selectedLanguage
+    }
+  },
   computed: {
     // Set active class to current page link
     isActive() {
@@ -137,15 +143,11 @@ export default {
       config
     }
   },
-  data() {
-    return {
-      selectedLanguage: 'en'
-    };
-  },
   methods: {
     setLanguage(language) {
-      this.selectedLanguage = language;
-    }
+      globalState.selectedLanguage = language;
+      this.selectedLanguage = globalState.selectedLanguage;
+    },
   }
 };
 
