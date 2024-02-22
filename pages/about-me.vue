@@ -297,7 +297,7 @@ export default {
   },
   watch: {
     updateComponents: function(newVal) {
-      // update code-editor div
+      // refresh code-editor div
     }
   },
   mounted(){
