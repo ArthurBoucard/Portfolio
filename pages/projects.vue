@@ -8,14 +8,14 @@
     <!-- section title (mobile) -->
     <div id="section-content-title" class="flex lg:hidden" @click="hiddenSection()">
       <img class="section-arrow" src="/icons/arrow.svg">
-      <p class="font-fira_regular text-white text-sm">projects</p>
+      <p class="font-fira_regular text-white text-sm">{{ config.text.Projects.title[selectedLanguage] }}</p>
     </div>
     
     <div id="filter-menu" class="w-full flex-col border-right font-fira_regular text-menu-text hidden lg:flex">
       <!-- title -->
       <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
         <img id="section-arrow-menu" src="/icons/arrow.svg" alt="" class="section-arrow mx-3 open">
-        <p class="font-fira_regular text-white text-sm">projects</p>
+        <p class="font-fira_regular text-white text-sm">{{ config.text.Projects.title[selectedLanguage] }}</p>
       </div>
 
       <!-- filter menu -->
@@ -49,24 +49,12 @@
 
       <!-- projects -->
       <div id="projects-case" class="grid grid-cols-1 lg:grid-cols-2 max-w-full h-full overflow-scroll lg:self-center">
-        <div id="not-found" class="hidden flex-col font-fira_retina text-menu-text my-5 h-full justify-center items-center">
-          <span class="flex justify-center text-4xl pb-3">
-            X__X
-          </span>
-          <span class="text-white flex justify-center text-xl">
-            No matching projects
-          </span>
-          <span class="flex justify-center">
-            for these technologies
-          </span>
-        </div>
-
         <div id="project" v-for="(project, key, index) in projects" :key="key" class="lg:mx-5">
           <!-- title -->
           <span class="flex text-sm my-3">
-            <h3 v-if="index == null" class="text-purplefy font-fira_bold mr-3">{{ project.title }}</h3>
-            <h3 v-else class="text-purplefy font-fira_bold mr-3">{{ project.title }}</h3>
-            <h4 class="font-fira_retina text-menu-text"> // {{ project.type }}</h4>
+            <h3 v-if="index == null" class="text-purplefy font-fira_bold mr-3">{{ project.title[selectedLanguage] }}</h3>
+            <h3 v-else class="text-purplefy font-fira_bold mr-3">{{ project.title[selectedLanguage] }}</h3>
+            <h4 class="font-fira_retina text-menu-text"> // {{ project.type[selectedLanguage] }}</h4>
           </span>
 
           <!-- info -->
@@ -78,11 +66,11 @@
             <div class="pb-8 pt-6 px-6 border-top">
               <div>
                 <p class="text-menu-text font-fira_retina text-sm mb-5">
-                  {{ project.description }}
+                  {{ project.description[selectedLanguage] }}
                 </p>
                 <div class="flex justify-between items-center">
                   <a id="view-button" :href="project.url" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
-                    view-project
+                    {{ config.text.Projects.view[selectedLanguage] }}
                   </a>
                   <div class="flex">
                     <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/' + tech.toLowerCase() + '.svg'" alt="" class="w-6 h-6 mx-1 hover:opacity-75">
@@ -262,10 +250,11 @@ export default {
       filters: ['all'],
       projects: '',
       loading: true,
+      selectedLanguage: localStorage.getItem('selectedLanguage')
     };
   },
   mounted() {
-    this.projects = this.config.public.dev.projects;
+    this.projects = this.config.text.Projects.projects;
     this.loading = false;
   },
   methods: {
@@ -282,7 +271,7 @@ export default {
         this.filters = this.filters.filter((item) => item !== tech); // remove tech from filters
         this.filters.length === 0 ? this.filters.push('all') : null; // add 'all' to filters if filters is empty
       }
-      this.filters[0] == 'all' ? this.projects = this.config.public.dev.projects : this.projects = this.filterProjectsBy(this.filters);
+      this.filters[0] == 'all' ? this.projects = this.config.text.Projects.projects : this.projects = this.filterProjectsBy(this.filters);
 
       if(this.projects.length === 0){
         // set flex to projects-case
@@ -307,7 +296,7 @@ export default {
      * @param {*} filters is an array with techs names.
      */
     filterProjectsBy(filters) {
-      const projectArray = Object.values(this.config.public.dev.projects);
+      const projectArray = Object.values(this.config.text.Projects.projects);
       return projectArray.filter(project => {
         return filters.some(filter => project.tech.includes(filter));
       });

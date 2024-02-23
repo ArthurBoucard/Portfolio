@@ -75,6 +75,214 @@
             }
         }
     },
+    "Projects": {
+        "title": {
+            "fr": "projets",
+            "en": "projects"
+        },
+        "subtitle": {
+            "fr": "mes-projets",
+            "en": "my-projects"
+        },
+        "all": {
+            "fr": "tous",
+            "en": "all"
+        },
+        "view": {
+            "fr": "voir-le-projet",
+            "en": "view-project"
+        },
+        "projects": {
+            "1": {
+                "title": {
+                    "fr": "Thurii",
+                    "en": "Thurii"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet personnel",
+                    "en": "Personal project"
+                },
+                "img": "/images/projects/thurii.png",
+                "tech": ["PHP", "SQL"],
+                "url": "https://thurii.fr"
+            },
+            "2": {
+                "title": {
+                    "fr": "Air Quality Monitor",
+                    "en": "Air Quality Monitor"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "Study project"
+                },
+                "img": "/images/projects/air-quality.png",
+                "tech": ["Arduino", "SQL"],
+                "url": "https://github.com/ArthurBoucard/Air-Quality-Monitor"
+            },
+            "3": {
+                "title": {
+                    "fr": "Infinite Typing Monkey",
+                    "en": "Infinite Typing Monkey"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet personnel",
+                    "en": "Personal project"
+                },
+                "img": "/images/projects/monkey.png",
+                "tech": ["Vue"],
+                "url": "https://github.com/ArthurBoucard/Infinite-Typing-Monkey"
+            },
+            "4": {
+                "title": {
+                    "fr": "HTop",
+                    "en": "HTop"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "Study project"
+                },
+                "img": "/images/projects/htop.png",
+                "tech": ["C++"],
+                "url": "https://github.com/ArthurBoucard/HTop"
+            },
+            "5": {
+                "title": {
+                    "fr": "Bomberman",
+                    "en": "Bomberman"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "Study project"
+                },
+                "img": "/images/projects/bomberman.png",
+                "tech": ["C++"],
+                "url": "https://github.com/ArthurBoucard/Bomberman-IndieStudio"
+            },
+            "6": {
+                "title": {
+                    "fr": "Redditech",
+                    "en": "Redditech"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "Study project"
+                },
+                "img": "/images/projects/redditech.png",
+                "tech": ["React-Native"],
+                "url": "https://github.com/ArthurBoucard/Redditech"
+            },
+            "7": {
+                "title": {
+                    "fr": "Fractal Tree",
+                    "en": "Fractal Tree"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet personnel",
+                    "en": "Personal project"
+                },
+                "img": "/images/projects/fractal.png",
+                "tech": ["Python"],
+                "url": "https://github.com/ArthurBoucard/Fractal_Tree"
+            },
+            "8": {
+                "title": {
+                    "fr": "Dante Star",
+                    "en": "Dante Star"
+                
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "Study project"
+                },
+                "img": "/images/projects/dante.png",
+                "tech": ["C"],
+                "url": "https://github.com/ArthurBoucard/Dante_Star"
+            },
+            "9": {
+                "title": {
+                    "fr": "MyRPG",
+                    "en": "MyRPG"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "Study project"
+                },
+                "img": "/images/projects/rpg.png",
+                "tech": ["C"],
+                "url": "https://github.com/ArthurBoucard/MyRPG"
+            },
+            "10": {
+                "title": {
+                    "fr": "MySokoban",
+                    "en": "MySokoban"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "Study project"
+                },
+                "img": "/images/projects/sokoban.png",
+                "tech": ["C"],
+                "url": "https://github.com/ArthurBoucard/MySokoban"
+            },
+            "11": {
+                "title": {
+                    "fr": "Matchstick Game",
+                    "en": "Matchstick Game"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "Study project"
+                },
+                "img": "/images/projects/matchstick.png",
+                "tech": ["C"],
+                "url": "https://github.com/ArthurBoucard/CPE_matchstick"
+            }
+        }
+    },
     "Contact": {
         "title": {
             "fr": "_contactez-moi",
