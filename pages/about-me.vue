@@ -12,19 +12,23 @@
 
         <!-- title -->
         <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
-          <p id="section-content-title-explorer" class="font-fira_regular text-white text-sm">Explorer</p>
+          <p id="section-content-title-explorer" class="font-fira_regular text-white text-sm">
+            {{ config.text.AboutMe.explorer[selectedLanguage] }}
+          </p>
         </div>
         <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
           <img id="section-arrow-menu" src="/icons/arrow.svg" alt="" class="section-arrow mx-3 open">
-          <p v-html="config.dev.about.sections[currentSection].title" class="font-fira_regular text-white text-sm"></p>
+          <p class="font-fira_regular text-white text-sm">
+            {{ config.text.AboutMe.informations[selectedLanguage] }}
+          </p>
         </div>
 
         <!-- files -->
         <div>
-          <div v-for="(folder, key, index) in config.dev.about.sections[currentSection].info" :key="key" class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text" @click="focusCurrentFolder(folder)">
+          <div v-for="(folder, key, index) in config.text.AboutMe.files" :key="key" class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text" @click="focusCurrentFolder(folder)">
             <div class="flex col-span-2 hover:text-white hover:cursor-pointer">
               <img :src="'/icons/markdown' + (index + 1) + '.svg'" alt="" class="mx-4">
-              <p :id="folder.title" v-html="key" :class="{ active: isActive(folder.title)}"></p>
+              <p :id="folder.en" v-html="folder[selectedLanguage]" :class="{ active: isActive(folder.en)}"></p>
             </div>
           </div>
         </div>
@@ -32,7 +36,9 @@
         <!-- contact -->
         <div id="section-content-title-contact" class="flex items-center min-w-full border-top">
           <img id="section-arrow-menu" src="/icons/arrow.svg" alt="" class="section-arrow mx-3 open">
-          <p v-html="config.dev.contacts.direct.title" class="font-fira_regular text-white text-sm"></p>
+          <p class="font-fira_regular text-white text-sm">
+            {{ config.text.AboutMe.contacts[selectedLanguage] }}
+          </p>
         </div>
         <div id="contact-sources" class="hidden lg:flex lg:flex-col my-2">
           <div v-for="(source, key) in config.dev.contacts.direct.sources" :key="key" class="flex items-center mb-2">
@@ -49,17 +55,19 @@
         <div v-for="section in config.dev.about.sections" :key="section.title">
           
           <!-- section title (mobile) -->
-          <div :key="section.title" :src="section.icon" id="section-content-title" class="flex lg:hidden mb-1" @click="focusCurrentSection(section)">
-            <img src="/icons/arrow.svg" :id="'section-arrow-' + section.title" alt="" class="section-arrow">
-            <p v-html="section.title" class=" text-white text-sm"></p>
+          <div key="my-informations" src="my-informations" id="section-content-title" class="flex lg:hidden mb-1" @click="focusCurrentSection(section)">
+            <img src="/icons/arrow.svg" :id="'section-arrow-my-informations'" alt="" class="section-arrow">
+            <p class=" text-white text-sm">
+              {{ config.text.AboutMe.informations[selectedLanguage] }}
+            </p>
           </div>
 
           <!-- files -->
-          <div :id="'folders-' + section.title" class="hidden"> <!-- <div :id="'folders-' + section.title" :class="currentSection == section.title ? 'block' : 'hidden'"> -->
-            <div v-for="(folder, key, index) in config.dev.about.sections[section.title].info" :key="key" class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text hover:text-white hover:cursor-pointer" @click="focusCurrentFolder(folder)">
+          <div id='folders-my-informations' class="hidden"> <!-- <div :id="'folders-' + section.title" :class="currentSection == section.title ? 'block' : 'hidden'"> -->
+            <div v-for="(folder, key, index) in config.text.AboutMe.files" :key="key" class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text hover:text-white hover:cursor-pointer" @click="focusCurrentFolder(folder)">
               <div class="flex col-span-2">
                 <img :src="'/icons/markdown' + (index + 1) + '.svg'" alt="" class="mx-4">
-                <p :id="folder.title" v-html="key" :class="{ active: isActive(folder.title)}"></p>
+                <p :id="folder.en" v-html="folder[selectedLanguage]" :class="{ active: isActive(folder.en)}"></p>
               </div>
             </div>
           </div>
@@ -69,7 +77,9 @@
         <!-- section content title -->
         <div id="section-content-title" class="flex items-center min-w-full" @click="showContacts()">
           <img src="/icons/arrow.svg" alt="" id="section-arrow" class="section-arrow">
-          <p v-html="config.dev.contacts.direct.title" class="font-fira_regular text-white text-sm"></p>
+          <p class="font-fira_regular text-white text-sm">
+              {{ config.text.AboutMe.contacts[selectedLanguage] }}
+          </p>
         </div>
 
         <!-- section content folders -->
@@ -93,13 +103,13 @@
         <!-- title -->
         <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
           <img :src="'/icons/markdown.svg'" alt="" class="mx-4">
-          <p v-html="config.dev.about.sections[currentSection].info[folder].title + '.md'" class="font-fira_regular text-white text-sm"></p>
+          <p v-html="config.text.AboutMe.files[folder][selectedLanguage] + '.md'" class="font-fira_regular text-white text-sm"></p>
         </div>
 
         <!-- code text -->
         <div id="code-editor-text" class="hidden lg:block h-full w-full lg:border-right overflow-scroll" @scroll="syncScroll('left')" ref="leftPanel">
           <div class="w-full h-full ml-5 mr-10 lg:my-5">
-              <CodeEditorText :key="updateComponents" :fileName="config.dev.about.sections[currentSection].info[folder].title" :update="updateComponents" />
+              <CodeEditorText :key="updateComponents" :fileName="config.text.AboutMe.files[folder][selectedLanguage]" :update="updateComponents" />
           </div>
         </div>
       </div>
@@ -110,13 +120,13 @@
         <!-- title -->
         <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
           <img :src="'/icons/preview.svg'" alt="" class="mx-4">
-          <p v-html="'Preview ' + config.dev.about.sections[currentSection].info[folder].title + '.md'" class="font-fira_regular text-white text-sm"></p>
+          <p v-html="config.text.AboutMe.preview[selectedLanguage] + ' ' + config.text.AboutMe.files[folder][selectedLanguage] + '.md'" class="font-fira_regular text-white text-sm"></p>
         </div>
 
         <!-- markdown -->
         <div id="right" class="max-w-full h-full flex flex-col overflow-scroll">
           <div class="h-full overflow-scroll" @scroll="syncScroll('right')" ref="rightPanel">
-            <MarkdownViewer :fileName="config.dev.about.sections[currentSection].info[folder].title" :update="updateComponents"/>
+            <MarkdownViewer :fileName="config.text.AboutMe.files[folder][selectedLanguage]" :update="updateComponents"/>
             <br><br>
           </div>
         </div>
@@ -197,6 +207,10 @@
   transition: 0.1s;
 }
 
+.section-arrow-my-informations {
+  transition: 0.1s;
+}
+
 #section-content #contacts {
   padding: 0px 25px;
 }
@@ -225,6 +239,7 @@ export default {
       leftPanel: null,
       rightPanel: null,
       updateComponents: false,
+      selectedLanguage: localStorage.getItem('selectedLanguage')
     }
   },
   /**
@@ -232,6 +247,7 @@ export default {
    */
   setup() {
     const config = useRuntimeConfig()
+
     return {
       config
     }
@@ -253,12 +269,13 @@ export default {
       this.currentSection = section.title
       this.folder = Object.keys(section.info)[0]
 
+      document.getElementById('section-arrow-my-informations').classList.toggle('rotate-90'); // rotate arrow
       document.getElementById('folders-' + section.title).classList.toggle('hidden') // show folders
     },
     focusCurrentFolder(folder) {
-      this.folder = folder.title
+      this.folder = folder.en
       // handle if folder belongs to the current section. It happens when you click on a folder from a different section in mobile view.
-      this.currentSection = this.config.dev.about.sections[this.currentSection].info[folder.title] ? this.currentSection : Object.keys(this.config.dev.about.sections).find(section => this.config.dev.about.sections[section].info[folder.title])
+      this.currentSection = this.config.text.AboutMe.files[this.folder]
       // update components every time a new folder is focused
       this.updateComponents = !this.updateComponents
     },

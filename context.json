@@ -43,6 +43,38 @@
             "en": "Back-end developer"
         }
     },
+    "AboutMe": {
+        "explorer": {
+            "fr": "Explorer",
+            "en": "Explorer"
+        },
+        "informations": {
+            "fr": "mes-informations",
+            "en": "my-informations"
+        },
+        "contacts": {
+            "fr": "contacts",
+            "en": "contacts"
+        },
+        "preview": {
+            "fr": "aperçu",
+            "en": "preview"
+        },
+        "files": {
+            "bio": {
+                "fr": "bio",
+                "en": "bio"
+            },
+            "interests": {
+                "fr": "intérêts",
+                "en": "interests"
+            },
+            "education": {
+                "fr": "éducation",
+                "en": "education"
+            }
+        }
+    },
     "Contact": {
         "title": {
             "fr": "_contactez-moi",
