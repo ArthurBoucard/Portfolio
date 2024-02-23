@@ -1,4 +1,6 @@
 {
+    "name": "Arthur Boucard",
+    "logo_name": "arthur-boucard",
     "AppHeader": {
         "_hello": {
             "fr": "_bienvenue",
@@ -21,6 +23,24 @@
         "findme": {
             "fr": "retrouvez-moi sur:",
             "en": "find me in:"
+        }
+    },
+    "Index": {
+        "intro": {
+            "fr": "Bonjour, je suis",
+            "en": "Hi all, I am"
+        },
+        "info1": {
+            "fr": "vous pouvez découvrir ce projet et plus sur ma page Github",
+            "en": "you can also see this project and more on my Github page"
+        },
+        "info2": {
+            "fr": "retrouvez mon profil sur Github:",
+            "en": "find my profile on Github:"
+        },
+        "role": {
+            "fr": "Développeur Back-end",
+            "en": "Back-end developer"
         }
     },
     "Contact": {
