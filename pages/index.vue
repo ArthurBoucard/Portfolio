@@ -32,8 +32,8 @@
 					<span class="operator">
 						=
 					</span>
-					<a class="string" target="_blank" :href="'https://github.com/' + config.public.dev.contacts.social.github.username">
-						"https://github.com/{{ config.public.dev.contacts.social.github.username }}"
+					<a class="string" target="_blank" :href="'https://github.com/' + config.text.Social.github.username">
+						"https://github.com/{{ config.text.Social.github.username }}"
 					</a>
 				</p>
 			</div>

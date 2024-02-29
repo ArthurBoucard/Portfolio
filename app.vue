@@ -17,7 +17,7 @@ export default {
    */
   watch: {
     $route(to, from) {
-      console.log('De', from.fullPath, 'a', to.fullPath);
+      console.log('From', from.fullPath, 'to', to.fullPath);
     }
   },
   mounted() {
