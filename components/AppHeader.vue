@@ -4,7 +4,7 @@
 
       <div class="flex">
         <NuxtLink id="nav-logo" to="/">
-          {{ config.dev.logo_name }}
+          {{ config.text.logo_name }}
         </NuxtLink>
 
         <NuxtLink id="nav-link" to="/" :class="{ active: isActive('/') }">

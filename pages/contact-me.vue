@@ -16,7 +16,7 @@
           </h3>
         </div>
         <div id="links">
-          <div v-for="(source, key) in contact.direct.sources" :key="key" class="link">
+          <div v-for="(source, key) in config.text.Social.direct" :key="key" class="link">
             <img :src="'/icons/' + key + '.svg'">
             <a v-html="source" :href="getLink(key, source)" class="font-fira_retina text-menu-text hover:text-white"></a>
           </div>
@@ -32,9 +32,9 @@
           </h3>
         </div>
         <div id="links">
-          <div v-for="(source, key) in contact.find_me_also_in.sources" :key="key" class="link">
+          <div v-for="(source, key) in config.text.Social.find_me_also_in" :key="key" class="link">
             <img src="/icons/link.svg">
-            <a :href="source.url" class="font-fira_retina text-menu-text hover:text-white" target="_blank">{{ source.title }}</a>
+            <a :href="source.url" class="font-fira_retina text-menu-text hover:text-white" target="_blank">{{ source.title[selectedLanguage] }}</a>
           </div>
         </div>
       </div>
@@ -91,7 +91,6 @@ export default {
     const config = useRuntimeConfig()
 
     return {
-      contact: config.dev.contacts,
       config
     }
   },

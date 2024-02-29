@@ -1,80 +1,6 @@
 {
     "name": "Arthur Boucard",
     "logo_name": "arthur-boucard",
-    "AppHeader": {
-        "_hello": {
-            "fr": "_bienvenue",
-            "en": "_hello"
-        },
-        "_about": {
-            "fr": "_qui-suis-je",
-            "en": "_about-me"
-        },
-        "_projects": {
-            "fr": "_projets",
-            "en": "_projects"
-        },
-        "_contact": {
-            "fr": "_contactez-moi",
-            "en": "_contact-me"
-        }
-    },
-    "AppFooter": {
-        "findme": {
-            "fr": "retrouvez-moi sur:",
-            "en": "find me in:"
-        }
-    },
-    "Index": {
-        "intro": {
-            "fr": "Bonjour, je suis",
-            "en": "Hi all, I am"
-        },
-        "info1": {
-            "fr": "vous pouvez découvrir ce projet et plus sur ma page Github",
-            "en": "you can also see this project and more on my Github page"
-        },
-        "info2": {
-            "fr": "retrouvez mon profil sur Github:",
-            "en": "find my profile on Github:"
-        },
-        "role": {
-            "fr": "Développeur Back-end",
-            "en": "Back-end developer"
-        }
-    },
-    "AboutMe": {
-        "explorer": {
-            "fr": "Explorer",
-            "en": "Explorer"
-        },
-        "informations": {
-            "fr": "mes-informations",
-            "en": "my-informations"
-        },
-        "contacts": {
-            "fr": "contacts",
-            "en": "contacts"
-        },
-        "preview": {
-            "fr": "aperçu",
-            "en": "preview"
-        },
-        "files": {
-            "bio": {
-                "fr": "bio",
-                "en": "bio"
-            },
-            "interests": {
-                "fr": "intérêts",
-                "en": "interests"
-            },
-            "education": {
-                "fr": "éducation",
-                "en": "education"
-            }
-        }
-    },
     "Projects": {
         "title": {
             "fr": "projets",
@@ -280,6 +206,157 @@
                 "img": "/images/projects/matchstick.png",
                 "tech": ["C"],
                 "url": "https://github.com/ArthurBoucard/CPE_matchstick"
+            }
+        }
+    },
+    "Social": {
+        "github": {
+            "title": {
+                "fr": "Compte Github",
+                "en": "Github account"
+            },
+            "url": "https://github.com/ArthurBoucard",
+            "username": "ArthurBoucard"
+        },
+        "linkedin": {
+            "title": {
+                "fr": "Profil Linkedin",
+                "en": "Linkedin profile"
+            },
+            "url": "https://www.linkedin.com/in/arthur-boucard-786745198/",
+            "username": "Arthur Boucard"
+        },
+        "direct": {
+            "email": "arthur.boucard@hotmail.fr",
+            "phone": "+33 7 86735000"
+        },
+        "find_me_also_in": {
+            "github": {
+                "title": {
+                    "fr": "Compte Github",
+                    "en": "Github account"
+                },
+                "url": "https://github.com/ArthurBoucard"
+            },
+            "linkedin": {
+                "title": {
+                    "fr": "Profil Linkedin",
+                    "en": "Linkedin profile"
+                },
+                "url": "https://www.linkedin.com/in/arthur-boucard-786745198/"
+            },
+            "malt": {
+                "title": {
+                    "fr": "Freelance - Malt",
+                    "en": "Malt - Freelance"
+                
+                },
+                "url": "https://www.malt.fr/profile/arthurboucard"
+            },
+            "upwork": {
+                "title": {
+                    "fr": "Freelance - Upwork",
+                    "en": "Upwork - Freelance"
+                },
+                "url": "https://www.upwork.com/freelancers/~0135fcd7a460c98d99"
+            },
+            "youtube": {
+                "title": {
+                    "fr": "Chaîne Youtube",
+                    "en": "Youtube channel"
+                },
+                "url": "https://www.youtube.com/@flamingtar"
+            }
+        }
+    },
+    "Index": {
+        "intro": {
+            "fr": "Bonjour, je suis",
+            "en": "Hi all, I am"
+        },
+        "info1": {
+            "fr": "vous pouvez découvrir ce projet et plus sur ma page Github",
+            "en": "you can also see this project and more on my Github page"
+        },
+        "info2": {
+            "fr": "retrouvez mon profil sur Github:",
+            "en": "find my profile on Github:"
+        },
+        "role": {
+            "fr": "Développeur Back-end",
+            "en": "Back-end developer"
+        }
+    },
+    "AppHeader": {
+        "_hello": {
+            "fr": "_bienvenue",
+            "en": "_hello"
+        },
+        "_about": {
+            "fr": "_qui-suis-je",
+            "en": "_about-me"
+        },
+        "_projects": {
+            "fr": "_projets",
+            "en": "_projects"
+        },
+        "_contact": {
+            "fr": "_contactez-moi",
+            "en": "_contact-me"
+        }
+    },
+    "AppFooter": {
+        "findme": {
+            "fr": "retrouvez-moi sur:",
+            "en": "find me in:"
+        }
+    },
+    "AboutMe": {
+        "explorer": {
+            "fr": "Explorer",
+            "en": "Explorer"
+        },
+        "informations": {
+            "fr": "mes-informations",
+            "en": "my-informations"
+        },
+        "contacts": {
+            "fr": "contacts",
+            "en": "contacts"
+        },
+        "preview": {
+            "fr": "aperçu",
+            "en": "preview"
+        },
+        "files": {
+            "bio": {
+                "fr": "bio",
+                "en": "bio"
+            },
+            "interests": {
+                "fr": "intérêts",
+                "en": "interests"
+            },
+            "education": {
+                "fr": "éducation",
+                "en": "education"
+            }
+        },
+        "sections": {
+            "my-informations": {
+                "title": "my-informations",
+                "icon": "icons/info-personal.svg",
+                "info": { 
+                    "bio": {
+                        "title": "bio"
+                    },
+                    "interests": {
+                        "title": "interests"
+                    },
+                    "education": {
+                        "title": "education"
+                    }
+                }
             }
         }
     },
