@@ -80,9 +80,11 @@ export default {
       }
     },
     setLanguage(language) {
-      location.reload(); // Reloads the current page
-      localStorage.setItem('selectedLanguage', language);
-      this.selectedLanguage = localStorage.getItem('selectedLanguage');
+      if (process.client) {
+        location.reload(); // Reloads the current page
+        localStorage.setItem('selectedLanguage', language);
+        this.selectedLanguage = localStorage.getItem('selectedLanguage');
+      }
     },
   },
   computed: {
