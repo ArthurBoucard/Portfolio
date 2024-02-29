@@ -2,7 +2,7 @@
   <main id="contact-me" class="page">
 
     <div id="mobile-page-title">
-      <h2>_contact-me</h2>
+      <h2>{{ config.text.Contact.title[selectedLanguage] }}</h2>
     </div>
 
     <div id="page-menu" class="w-full h-full flex flex-col border-right">
@@ -12,11 +12,11 @@
         <div class="title" @click="open('contacts')">
           <img class="arrow" src="/icons/arrow.svg">
           <h3>
-            contacts
+            {{ config.text.Contact.subtitle.contacts[selectedLanguage] }}
           </h3>
         </div>
         <div id="links">
-          <div v-for="(source, key) in contact.direct.sources" :key="key" class="link">
+          <div v-for="(source, key) in config.text.Social.direct" :key="key" class="link">
             <img :src="'/icons/' + key + '.svg'">
             <a v-html="source" :href="getLink(key, source)" class="font-fira_retina text-menu-text hover:text-white"></a>
           </div>
@@ -28,13 +28,13 @@
         <div class="title" @click="open('find-me-in')">
           <img class="arrow" src="/icons/arrow.svg">
           <h3>
-            find-me-also-in
+            {{ config.text.Contact.subtitle.findme[selectedLanguage] }}
           </h3>
         </div>
         <div id="links">
-          <div v-for="(source, key) in contact.find_me_also_in.sources" :key="key" class="link">
+          <div v-for="(source, key) in config.text.Social.find_me_also_in" :key="key" class="link">
             <img src="/icons/link.svg">
-            <a :href="source.url" class="font-fira_retina text-menu-text hover:text-white" target="_blank">{{ source.title }}</a>
+            <a :href="source.url" class="font-fira_retina text-menu-text hover:text-white" target="_blank">{{ source.title[selectedLanguage] }}</a>
           </div>
         </div>
       </div>
@@ -47,7 +47,9 @@
     <div class="tab-height w-full hidden lg:flex border-right border-bot items-center">
 
       <div class="flex items-center border-right h-full">
-        <p class="font-fira_regular text-menu-text text-sm px-3">contacts</p>
+        <p class="font-fira_regular text-menu-text text-sm px-3">
+          {{ config.text.Contact.subtitle.contacts[selectedLanguage] }}
+        </p>
         <img src="/icons/close.svg" alt="" class="m-3">
       </div>
 
@@ -82,13 +84,14 @@ export default {
       name: '',
       email: '',
       message: '',
+      selectedLanguage: localStorage.getItem('selectedLanguage')
     }
   },
   setup() {
-    const contact = useRuntimeConfig().dev.contacts
+    const config = useRuntimeConfig()
 
     return {
-      contact
+      config
     }
   },
   methods: {

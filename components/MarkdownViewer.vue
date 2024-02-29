@@ -55,7 +55,7 @@ export default {
       let markdownText = ''
 
       try {
-        const filePath = `/markdown/${this.fileName}.md` 
+        const filePath = `/markdown/${localStorage.getItem('selectedLanguage')}/${this.fileName}.md` 
         markdownText = await readFile(filePath)
       } catch (error) {
         console.error('Error rendering markdown:', error)

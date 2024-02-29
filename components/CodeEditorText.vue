@@ -65,7 +65,7 @@ export default {
   methods: {
     async updateLines() {
       try {
-        const filePath = `/markdown/${this.fileName}.md` 
+        const filePath = `/markdown/${localStorage.getItem('selectedLanguage')}/${this.fileName}.md` 
         this.markdownText = await readFile(filePath)
       } catch (error) {
         console.error('Error rendering markdown:', error)

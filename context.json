@@ -1,0 +1,398 @@
+{
+    "name": "Arthur Boucard",
+    "logo_name": "arthur-boucard",
+    "role": "Back-end developer",
+    "Projects": {
+        "title": {
+            "fr": "projets",
+            "en": "projects"
+        },
+        "subtitle": {
+            "fr": "mes-projets",
+            "en": "my-projects"
+        },
+        "all": {
+            "fr": "tous",
+            "en": "all"
+        },
+        "view": {
+            "fr": "voir-le-projet",
+            "en": "view-project"
+        },
+        "projects": {
+            "1": {
+                "title": {
+                    "fr": "Thurii",
+                    "en": "Thurii"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet personnel",
+                    "en": "Personal project"
+                },
+                "img": "/images/projects/thurii.png",
+                "tech": ["PHP", "SQL"],
+                "url": "https://thurii.fr"
+            },
+            "2": {
+                "title": {
+                    "fr": "Air Quality Monitor",
+                    "en": "Air Quality Monitor"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "Study project"
+                },
+                "img": "/images/projects/air-quality.png",
+                "tech": ["Arduino", "SQL"],
+                "url": "https://github.com/ArthurBoucard/Air-Quality-Monitor"
+            },
+            "3": {
+                "title": {
+                    "fr": "Infinite Typing Monkey",
+                    "en": "Infinite Typing Monkey"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet personnel",
+                    "en": "Personal project"
+                },
+                "img": "/images/projects/monkey.png",
+                "tech": ["Vue"],
+                "url": "https://github.com/ArthurBoucard/Infinite-Typing-Monkey"
+            },
+            "4": {
+                "title": {
+                    "fr": "HTop",
+                    "en": "HTop"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "Study project"
+                },
+                "img": "/images/projects/htop.png",
+                "tech": ["C++"],
+                "url": "https://github.com/ArthurBoucard/HTop"
+            },
+            "5": {
+                "title": {
+                    "fr": "Bomberman",
+                    "en": "Bomberman"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "Study project"
+                },
+                "img": "/images/projects/bomberman.png",
+                "tech": ["C++"],
+                "url": "https://github.com/ArthurBoucard/Bomberman-IndieStudio"
+            },
+            "6": {
+                "title": {
+                    "fr": "Redditech",
+                    "en": "Redditech"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "Study project"
+                },
+                "img": "/images/projects/redditech.png",
+                "tech": ["React-Native"],
+                "url": "https://github.com/ArthurBoucard/Redditech"
+            },
+            "7": {
+                "title": {
+                    "fr": "Fractal Tree",
+                    "en": "Fractal Tree"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet personnel",
+                    "en": "Personal project"
+                },
+                "img": "/images/projects/fractal.png",
+                "tech": ["Python"],
+                "url": "https://github.com/ArthurBoucard/Fractal_Tree"
+            },
+            "8": {
+                "title": {
+                    "fr": "Dante Star",
+                    "en": "Dante Star"
+                
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "Study project"
+                },
+                "img": "/images/projects/dante.png",
+                "tech": ["C"],
+                "url": "https://github.com/ArthurBoucard/Dante_Star"
+            },
+            "9": {
+                "title": {
+                    "fr": "MyRPG",
+                    "en": "MyRPG"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "Study project"
+                },
+                "img": "/images/projects/rpg.png",
+                "tech": ["C"],
+                "url": "https://github.com/ArthurBoucard/MyRPG"
+            },
+            "10": {
+                "title": {
+                    "fr": "MySokoban",
+                    "en": "MySokoban"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "Study project"
+                },
+                "img": "/images/projects/sokoban.png",
+                "tech": ["C"],
+                "url": "https://github.com/ArthurBoucard/MySokoban"
+            },
+            "11": {
+                "title": {
+                    "fr": "Matchstick Game",
+                    "en": "Matchstick Game"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "Study project"
+                },
+                "img": "/images/projects/matchstick.png",
+                "tech": ["C"],
+                "url": "https://github.com/ArthurBoucard/CPE_matchstick"
+            }
+        }
+    },
+    "Social": {
+        "github": {
+            "title": {
+                "fr": "Compte Github",
+                "en": "Github account"
+            },
+            "url": "https://github.com/ArthurBoucard",
+            "username": "ArthurBoucard"
+        },
+        "linkedin": {
+            "title": {
+                "fr": "Profil Linkedin",
+                "en": "Linkedin profile"
+            },
+            "url": "https://www.linkedin.com/in/arthur-boucard-786745198/",
+            "username": "Arthur Boucard"
+        },
+        "direct": {
+            "email": "arthur.boucard@hotmail.fr",
+            "phone": "+33 7 86735000"
+        },
+        "find_me_also_in": {
+            "github": {
+                "title": {
+                    "fr": "Compte Github",
+                    "en": "Github account"
+                },
+                "url": "https://github.com/ArthurBoucard"
+            },
+            "linkedin": {
+                "title": {
+                    "fr": "Profil Linkedin",
+                    "en": "Linkedin profile"
+                },
+                "url": "https://www.linkedin.com/in/arthur-boucard-786745198/"
+            },
+            "malt": {
+                "title": {
+                    "fr": "Freelance - Malt",
+                    "en": "Malt - Freelance"
+                
+                },
+                "url": "https://www.malt.fr/profile/arthurboucard"
+            },
+            "upwork": {
+                "title": {
+                    "fr": "Freelance - Upwork",
+                    "en": "Upwork - Freelance"
+                },
+                "url": "https://www.upwork.com/freelancers/~0135fcd7a460c98d99"
+            },
+            "youtube": {
+                "title": {
+                    "fr": "Chaîne Youtube",
+                    "en": "Youtube channel"
+                },
+                "url": "https://www.youtube.com/@flamingtar"
+            }
+        }
+    },
+    "Index": {
+        "intro": {
+            "fr": "Bonjour, je suis",
+            "en": "Hi all, I am"
+        },
+        "info1": {
+            "fr": "vous pouvez découvrir ce projet et plus sur ma page Github",
+            "en": "you can also see this project and more on my Github page"
+        },
+        "info2": {
+            "fr": "retrouvez mon profil sur Github:",
+            "en": "find my profile on Github:"
+        },
+        "role": {
+            "fr": "Développeur Back-end",
+            "en": "Back-end developer"
+        }
+    },
+    "AppHeader": {
+        "_hello": {
+            "fr": "_bienvenue",
+            "en": "_hello"
+        },
+        "_about": {
+            "fr": "_qui-suis-je",
+            "en": "_about-me"
+        },
+        "_projects": {
+            "fr": "_projets",
+            "en": "_projects"
+        },
+        "_contact": {
+            "fr": "_contactez-moi",
+            "en": "_contact-me"
+        }
+    },
+    "AppFooter": {
+        "findme": {
+            "fr": "retrouvez-moi sur:",
+            "en": "find me in:"
+        }
+    },
+    "AboutMe": {
+        "explorer": {
+            "fr": "Explorer",
+            "en": "Explorer"
+        },
+        "informations": {
+            "fr": "mes-informations",
+            "en": "my-informations"
+        },
+        "contacts": {
+            "fr": "contacts",
+            "en": "contacts"
+        },
+        "preview": {
+            "fr": "aperçu",
+            "en": "preview"
+        },
+        "files": {
+            "bio": {
+                "fr": "bio",
+                "en": "bio"
+            },
+            "interests": {
+                "fr": "intérêts",
+                "en": "interests"
+            },
+            "education": {
+                "fr": "éducation",
+                "en": "education"
+            }
+        },
+        "sections": {
+            "my-informations": {
+                "title": "my-informations",
+                "icon": "icons/info-personal.svg",
+                "info": { 
+                    "bio": {
+                        "title": "bio"
+                    },
+                    "interests": {
+                        "title": "interests"
+                    },
+                    "education": {
+                        "title": "education"
+                    }
+                }
+            }
+        }
+    },
+    "Contact": {
+        "title": {
+            "fr": "_contactez-moi",
+            "en": "_contact-me"
+        },
+        "subtitle": {
+            "contacts": {
+                "fr": "contacts",
+                "en": "contacts"
+            },
+            "findme": {
+                "fr": "retrouvez-moi-aussi-sur",
+                "en": "find-me-also-in"
+            }
+        },
+        "form": {
+            "name": {
+                "fr": "_nom",
+                "en": "_name"
+            },
+            "email": {
+                "fr": "_email",
+                "en": "_email"
+            },
+            "message": {
+                "fr": "_message",
+                "en": "_message"
+            },
+            "submit": {
+                "fr": "envoyer",
+                "en": "submit-message"
+            }
+        }
+    }
+}

@@ -1,79 +1,79 @@
 <template>
-    <footer class='flex md:justify-between border-top text-menu-text font-fira_retina'>
+  <footer class='flex md:justify-between border-top text-menu-text font-fira_retina'>
 
-        <!-- social icons -->
-        <div class="w-full flex justify-between md:justify-start">
-            <span id="social-title" class="h-full flex justify-center items-center border-right px-5">
-                find me in:
-            </span>
-            <div id="social-icons" class="flex">
-                <NuxtLink :to="social.linkedin.url" target="_blank" class="flex justify-center items-center">
-                    <img src="/icons/social/linkedin.svg"/>
-                </NuxtLink>
-                <NuxtLink :to="social.github.url" target="_blank" class="flex md:hidden justify-center items-center">
-                <img src="/icons/social/github.svg"/>
-            </NuxtLink>
-            </div>
-        </div>
-
-        <!-- github user -->
-        <NuxtLink :to="social.github.url" target="_blank" class="hidden md:flex items-center px-5 border-left">
-            @{{ social.github.username }}
-            <img src="/icons/social/github.svg"/>
+    <!-- social icons -->
+    <div class="w-full flex justify-between md:justify-start">
+      <span id="social-title" class="h-full flex justify-center items-center border-right px-5">
+        {{ config.text.AppFooter.findme[selectedLanguage] }}
+      </span>
+      <div id="social-icons" class="flex">
+        <NuxtLink :to="config.text.Social.linkedin.url" target="_blank" class="flex justify-center items-center">
+          <img src="/icons/social/linkedin.svg"/>
         </NuxtLink>
+        <NuxtLink :to="config.text.Social.github.url" target="_blank" class="flex md:hidden justify-center items-center">
+          <img src="/icons/social/github.svg"/>
+        </NuxtLink>
+      </div>
+    </div>
 
-    </footer>
+    <!-- github user -->
+    <NuxtLink :to="config.text.Social.github.url" target="_blank" class="hidden md:flex items-center px-5 border-left">
+      @{{ config.text.Social.github.username }}
+      <img src="/icons/social/github.svg"/>
+    </NuxtLink>
+
+  </footer>
 </template>
 
 <style>
 
 footer {
-    height: 40px;
-    min-height: 40px;
-    font-size: 13px;
+  height: 40px;
+  min-height: 40px;
+  font-size: 13px;
 }
 
 footer a:hover {
-    background-color: #1e2d3d74;
+  background-color: #1e2d3d74;
 }
 
 #social-icons > a {
-    border-right: 1px solid #1E2D3D;
-    height: 100%;
-    width: 50px;
- }
+  border-right: 1px solid #1E2D3D;
+  height: 100%;
+  width: 50px;
+}
 
 #social-icons > a > img {
-    width: 1.25rem; /* 20px */
-    height: 1.25rem; /* 20px */
-    margin: auto;
-    opacity: 0.4;
+  width: 1.25rem; /* 20px */
+  height: 1.25rem; /* 20px */
+  margin: auto;
+  opacity: 0.4;
 }
 
 footer > a > img {
-    width: 1.25rem; /* 20px */
-    height: 1.25rem; /* 20px */
-    margin-left: 0.5rem; /* 8px */
-  }
+  width: 1.25rem; /* 20px */
+  height: 1.25rem; /* 20px */
+  margin-left: 0.5rem; /* 8px */
+}
 
 #social-icons > a:hover img {
-    opacity: 1;
+  opacity: 1;
 }
 
 @media (max-width: 768px) {
 
-    #social-title {
-        border-right: none;
-    }
+  #social-title {
+    border-right: none;
+  }
 
-    #social-icons > a {
-        border-right: none;
-        border-left: 1px solid #1E2D3D;
-    }
+  #social-icons > a {
+    border-right: none;
+    border-left: 1px solid #1E2D3D;
+  }
 
-    #social-icons > a > img {
-        width: 1.5rem; /* 20px */
-        height: 1.5rem; /* 20px */
+  #social-icons > a > img {
+    width: 1.5rem; /* 20px */
+    height: 1.5rem; /* 20px */
   }
 }
 
@@ -81,16 +81,19 @@ footer > a > img {
 
 <script>
 export default {
-    name: 'AppFooter',
-    data() {
-        return {
-          route: this.$route.path,
-        }
-    },
-    setup() {
-        return {
-            social: useRuntimeConfig().dev.contacts.social
-        }
-    },
+  name: 'AppFooter',
+  data() {
+    return {
+      route: this.$route.path,
+      selectedLanguage: localStorage.getItem('selectedLanguage')
+    }
+  },
+  setup() {
+    const config = useRuntimeConfig()
+
+    return {
+      config
+    }
+  }
 }
 </script>

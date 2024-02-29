@@ -9,18 +9,18 @@
 		
 			<div class="head">
 				<span>
-					Hi all, I am
+					{{ config.text.Index.intro[selectedLanguage] }}
 				</span>
-				<h1>{{ config.dev.name }}</h1>
-				<h2>> {{ config.dev.role }}</h2>
+				<h1>{{ config.text.name }}</h1>
+				<h2>> {{ config.text.Index.role[selectedLanguage] }}</h2>
 			</div>
 
 			<div id="info">
 				<span :class="{hide: isMobile}">
-					// you can also see this project and more on my Github page
+					{{ config.text.Index.info1[selectedLanguage] }}
 				</span>
 				<span :class="{hide: !isMobile}">
-					// find my profile on Github:
+					{{ config.text.Index.info2[selectedLanguage] }}
 				</span>
 				<p class="code">
 					<span class="identifier">
@@ -284,6 +284,7 @@ export default {
   name: 'Hello',
   setup() {
     const config = useRuntimeConfig()
+
     return {
       config
     }
@@ -291,7 +292,8 @@ export default {
   data() {
     return {
       isMobile: false,
-      loading: true
+      loading: true,
+      selectedLanguage: localStorage.getItem('selectedLanguage')
     }
   },
   mounted() {
