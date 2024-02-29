@@ -20,6 +20,16 @@ export default {
       console.log('From', from.fullPath, 'to', to.fullPath);
     }
   },
+  created() {
+  if (process.client) {
+    // Check if language is set in localStorage
+    const language = localStorage.getItem('selectedLanguage');
+    // If language is not set, set it to a default language
+    if (!language) {
+      localStorage.setItem('selectedLanguage', 'en'); // Default language is set to English ('en')
+    }
+  }
+  },
   mounted() {
     AOS.init({
         // Global settings:
