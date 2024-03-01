@@ -26,8 +26,8 @@
                     "en": "Thurii"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Application mobile ayant pour but de centraliser toutes les informations liés à la randonnée et accompagner ces utilisateurs.",
+                    "en": "Mobile application aimed at centralizing all information related to hiking and accompanying it's users."
                 },
                 "type": {
                     "fr": "Projet personnel",
@@ -43,8 +43,8 @@
                     "en": "Air Quality Monitor"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Des capteurs de qualité de l'air connectés à une base de données pour suivre l'évolution de la qualité de l'air.",
+                    "en": "Air quality sensors connected to a database to monitor the evolution of air quality."
                 },
                 "type": {
                     "fr": "Projet étudiant",
@@ -60,8 +60,8 @@
                     "en": "Infinite Typing Monkey"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Site web reprenant le concept du singe écrivant à l'infini.",
+                    "en": "Website taking up the concept of the monkey writing infinitely."
                 },
                 "type": {
                     "fr": "Projet personnel",
@@ -77,8 +77,8 @@
                     "en": "HTop"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Recréation de la commande htop en C++.",
+                    "en": "Recreation of the htop command in C++."
                 },
                 "type": {
                     "fr": "Projet étudiant",
@@ -94,8 +94,8 @@
                     "en": "Bomberman"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Un Bomberman réimaginez en C++.",
+                    "en": "A Bomberman reimagined in C++."
                 },
                 "type": {
                     "fr": "Projet étudiant",
@@ -111,8 +111,8 @@
                     "en": "Redditech"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Une application mobile utilisant l'API Reddit",
+                    "en": "A mobile application using the Reddit API."
                 },
                 "type": {
                     "fr": "Projet étudiant",
@@ -128,8 +128,8 @@
                     "en": "Fractal Tree"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Un générateur d'arbre fractal en Python.",
+                    "en": "A fractal tree generator in Python."
                 },
                 "type": {
                     "fr": "Projet personnel",
@@ -146,8 +146,8 @@
                 
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Un générateur et un solveur de labyrinthe en C.",
+                    "en": "A maze generator and solver in C."
                 },
                 "type": {
                     "fr": "Projet étudiant",
@@ -163,8 +163,8 @@
                     "en": "MyRPG"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Un petit RPG en C.",
+                    "en": "A small RPG in C."
                 },
                 "type": {
                     "fr": "Projet étudiant",
@@ -180,8 +180,8 @@
                     "en": "MySokoban"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Recréation du jeu Sokoban en C.",
+                    "en": "Recreation of the Sokoban game in C."
                 },
                 "type": {
                     "fr": "Projet étudiant",
@@ -197,8 +197,8 @@
                     "en": "Matchstick Game"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Le jeu des allumettes en C, avec possibilté de jouer contre un ordinateur.",
+                    "en": "The matchstick game in C, with the possibility of playing against a computer."
                 },
                 "type": {
                     "fr": "Projet étudiant",
