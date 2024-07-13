@@ -69,8 +69,10 @@
                   {{ project.description[selectedLanguage] }}
                 </p>
                 <div class="flex justify-between items-center">
-                  <a id="view-button" :href="project.url" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
-                    {{ config.text.Projects.view[selectedLanguage] }}
+                  <a id="view-button" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
+                    <NuxtLink :to="project.article">
+                      {{ config.text.Projects.view[selectedLanguage] }}
+                    </NuxtLink>
                   </a>
                   <div class="flex">
                     <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/' + tech.toLowerCase() + '.svg'" alt="" class="w-6 h-6 mx-1 hover:opacity-75">

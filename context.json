@@ -35,7 +35,8 @@
                 },
                 "img": "/images/projects/thurii.png",
                 "tech": ["PHP", "SQL"],
-                "url": "https://thurii.fr"
+                "url": "https://thurii.fr",
+                "article": "/article?title=thurii"
             },
             "2": {
                 "title": {

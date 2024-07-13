@@ -33,7 +33,7 @@ export default {
     },
     update: {
       type: Boolean,
-      required: true
+      required: false
     },
   },
   
