@@ -1,7 +1,9 @@
 <template>
-  <div>
-    <MarkdownViewer :fileName="'/articles/' + $route.query.title"/>
-  </div>
+  <main class="page">
+    <p>
+      <MarkdownViewer :fileName="'/articles/' + $route.query.title"/>
+    </p>
+  </main>
 </template>
   
 <script>
@@ -13,4 +15,12 @@
     },
   };
 </script>
+
+<style>
+  p {
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+</style>
   
