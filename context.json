@@ -16,8 +16,8 @@
             "en": "all"
         },
         "view": {
-            "fr": "voir-le-projet",
-            "en": "view-project"
+            "fr": "voir-le-blog",
+            "en": "view-blog"
         },
         "projects": {
             "1": {
@@ -35,12 +35,30 @@
                 },
                 "img": "/images/projects/thurii.png",
                 "tech": ["PHP", "SQL"],
-                "url": "https://thurii.fr",
+                "url": "https://github.com/Bouboule-Corp",
                 "article": "/article?title=thurii"
             },
             "2": {
                 "title": {
-                    "fr": "Air Quality Monitor",
+                    "fr": "Paradoxe du singe savant",
+                    "en": "Infinite Typing Monkey"
+                },
+                "description": {
+                    "fr": "Site web reprenant le paradoxe du singe savant.",
+                    "en": "Website taking up the concept of the monkey writing infinitely."
+                },
+                "type": {
+                    "fr": "Projet personnel",
+                    "en": "Personal project"
+                },
+                "img": "/images/projects/monkey.png",
+                "tech": ["Vue", "PHP", "SQL"],
+                "url": "https://github.com/ArthurBoucard/Infinite-Typing-Monkey",
+                "article": "/article?title=infinite-typping-monkey"
+            },
+            "3": {
+                "title": {
+                    "fr": "Capteur de qualité d'air",
                     "en": "Air Quality Monitor"
                 },
                 "description": {
@@ -53,161 +71,8 @@
                 },
                 "img": "/images/projects/air-quality.png",
                 "tech": ["Arduino", "SQL"],
-                "url": "https://github.com/ArthurBoucard/Air-Quality-Monitor"
-            },
-            "3": {
-                "title": {
-                    "fr": "Infinite Typing Monkey",
-                    "en": "Infinite Typing Monkey"
-                },
-                "description": {
-                    "fr": "Site web reprenant le concept du singe écrivant à l'infini.",
-                    "en": "Website taking up the concept of the monkey writing infinitely."
-                },
-                "type": {
-                    "fr": "Projet personnel",
-                    "en": "Personal project"
-                },
-                "img": "/images/projects/monkey.png",
-                "tech": ["Vue"],
-                "url": "https://github.com/ArthurBoucard/Infinite-Typing-Monkey"
-            },
-            "4": {
-                "title": {
-                    "fr": "HTop",
-                    "en": "HTop"
-                },
-                "description": {
-                    "fr": "Recréation de la commande htop en C++.",
-                    "en": "Recreation of the htop command in C++."
-                },
-                "type": {
-                    "fr": "Projet étudiant",
-                    "en": "Study project"
-                },
-                "img": "/images/projects/htop.png",
-                "tech": ["C++"],
-                "url": "https://github.com/ArthurBoucard/HTop"
-            },
-            "5": {
-                "title": {
-                    "fr": "Bomberman",
-                    "en": "Bomberman"
-                },
-                "description": {
-                    "fr": "Un Bomberman réimaginez en C++.",
-                    "en": "A Bomberman reimagined in C++."
-                },
-                "type": {
-                    "fr": "Projet étudiant",
-                    "en": "Study project"
-                },
-                "img": "/images/projects/bomberman.png",
-                "tech": ["C++"],
-                "url": "https://github.com/ArthurBoucard/Bomberman-IndieStudio"
-            },
-            "6": {
-                "title": {
-                    "fr": "Redditech",
-                    "en": "Redditech"
-                },
-                "description": {
-                    "fr": "Une application mobile utilisant l'API de Reddit.",
-                    "en": "A mobile application using the Reddit API."
-                },
-                "type": {
-                    "fr": "Projet étudiant",
-                    "en": "Study project"
-                },
-                "img": "/images/projects/redditech.png",
-                "tech": ["React-Native"],
-                "url": "https://github.com/ArthurBoucard/Redditech"
-            },
-            "7": {
-                "title": {
-                    "fr": "Fractal Tree",
-                    "en": "Fractal Tree"
-                },
-                "description": {
-                    "fr": "Un générateur d'arbre fractal en Python.",
-                    "en": "A fractal tree generator in Python."
-                },
-                "type": {
-                    "fr": "Projet personnel",
-                    "en": "Personal project"
-                },
-                "img": "/images/projects/fractal.png",
-                "tech": ["Python"],
-                "url": "https://github.com/ArthurBoucard/Fractal_Tree"
-            },
-            "8": {
-                "title": {
-                    "fr": "Dante Star",
-                    "en": "Dante Star"
-                
-                },
-                "description": {
-                    "fr": "Un générateur et un solveur de labyrinthe en C.",
-                    "en": "A maze generator and solver in C."
-                },
-                "type": {
-                    "fr": "Projet étudiant",
-                    "en": "Study project"
-                },
-                "img": "/images/projects/dante.png",
-                "tech": ["C"],
-                "url": "https://github.com/ArthurBoucard/Dante_Star"
-            },
-            "9": {
-                "title": {
-                    "fr": "MyRPG",
-                    "en": "MyRPG"
-                },
-                "description": {
-                    "fr": "Un petit RPG en C.",
-                    "en": "A small RPG in C."
-                },
-                "type": {
-                    "fr": "Projet étudiant",
-                    "en": "Study project"
-                },
-                "img": "/images/projects/rpg.png",
-                "tech": ["C"],
-                "url": "https://github.com/ArthurBoucard/MyRPG"
-            },
-            "10": {
-                "title": {
-                    "fr": "MySokoban",
-                    "en": "MySokoban"
-                },
-                "description": {
-                    "fr": "Recréation du jeu Sokoban en C.",
-                    "en": "Recreation of the Sokoban game in C."
-                },
-                "type": {
-                    "fr": "Projet étudiant",
-                    "en": "Study project"
-                },
-                "img": "/images/projects/sokoban.png",
-                "tech": ["C"],
-                "url": "https://github.com/ArthurBoucard/MySokoban"
-            },
-            "11": {
-                "title": {
-                    "fr": "Matchstick Game",
-                    "en": "Matchstick Game"
-                },
-                "description": {
-                    "fr": "Le jeu des allumettes en C, avec possibilté de jouer contre un ordinateur.",
-                    "en": "The matchstick game in C, with the possibility of playing against a computer."
-                },
-                "type": {
-                    "fr": "Projet étudiant",
-                    "en": "Study project"
-                },
-                "img": "/images/projects/matchstick.png",
-                "tech": ["C"],
-                "url": "https://github.com/ArthurBoucard/CPE_matchstick"
+                "url": "https://github.com/ArthurBoucard/Air-Quality-Monitor",
+                "article": "/article?title=air-quality-monitor"
             }
         }
     },

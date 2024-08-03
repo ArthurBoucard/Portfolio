@@ -65,17 +65,22 @@
 
             <div class="pb-8 pt-6 px-6 border-top">
               <div>
-                <p class="text-menu-text font-fira_retina text-sm mb-5">
+                <p id="project-description" class="text-menu-text font-fira_retina text-sm mb-5">
                   {{ project.description[selectedLanguage] }}
                 </p>
                 <div class="flex justify-between items-center">
-                  <a id="view-button" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
-                    <NuxtLink :to="project.article">
-                      {{ config.text.Projects.view[selectedLanguage] }}
-                    </NuxtLink>
-                  </a>
+                  <div class="flex justify-between items-center">
+                    <a id="view-button" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
+                      <NuxtLink :to="project.article">
+                        {{ config.text.Projects.view[selectedLanguage] }}
+                      </NuxtLink>
+                    </a>
+                    <a id="project-github" :href="project.url" target="_blank" class="hover:opacity-75">
+                      <img src="/icons/social/github.svg">
+                    </a>
+                  </div>
                   <div class="flex">
-                    <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/' + tech.toLowerCase() + '.svg'" alt="" class="w-6 h-6 mx-1 hover:opacity-75">
+                    <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/' + tech.toLowerCase() + '.svg'" alt="" class="w-6 h-6 mx-1 opacity-75">
                   </div>
                 </div>
               </div>
@@ -126,7 +131,19 @@
   background-color: #011221;
   border-radius: 15px;
   max-width: 400px;
+  text-align: left;
   /* max-height: 315px; */
+}
+
+#project-description {
+  text-align: left;
+  margin-left: 0%;
+  margin-right: 0%;
+}
+
+#project-github {
+  text-align: left;
+  margin-left: 10px;
 }
 
 #showcase {
@@ -248,7 +265,7 @@ export default {
   },
   data() {
     return {
-      techs: ['PHP', 'SQL', 'Arduino', 'C++', 'C', 'Python', 'Vue', 'React-Native'],
+      techs: ['PHP', 'SQL', 'Arduino', 'Python', 'Vue'],
       filters: ['all'],
       projects: '',
       loading: true,
