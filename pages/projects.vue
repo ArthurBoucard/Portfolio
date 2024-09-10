@@ -21,9 +21,9 @@
       <!-- filter menu -->
       <nav id="filters" class="w-full flex-col">
   
-        <div v-for="tech in techs" :key="tech" class="flex items-center py-2">
+        <div v-for="tech in ['freelance', 'personal', 'school']" :key="tech" class="flex items-center py-2">
           <input type="checkbox" :id="tech" @click="filterProjects(tech)">
-          <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech.toLowerCase() + '.svg'" alt="" class="tech-icon w-5 h-5 mx-4">
+          <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech + '.svg'" alt="" class="tech-icon w-5 h-5 mx-4">
           <span :id="'title-tech-' + tech">{{ tech }}</span>
         </div>
       </nav>
@@ -75,12 +75,11 @@
                         {{ config.text.Projects.view[selectedLanguage] }}
                       </NuxtLink>
                     </a>
+                  </div>
+                  <div class="flex">
                     <a id="project-github" :href="project.url" target="_blank" class="hover:opacity-75">
                       <img src="/icons/social/github.svg">
                     </a>
-                  </div>
-                  <div class="flex">
-                    <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/' + tech.toLowerCase() + '.svg'" alt="" class="w-6 h-6 mx-1 opacity-75">
                   </div>
                 </div>
               </div>
@@ -265,19 +264,20 @@ export default {
   },
   data() {
     return {
-      techs: ['PHP', 'SQL', 'Arduino', 'Python', 'Vue'],
       filters: ['all'],
       projects: '',
       loading: true,
-      selectedLanguage: localStorage.getItem('selectedLanguage')
+      selectedLanguage: localStorage.getItem('selectedLanguage'),
+      techs: [],
     };
   },
   mounted() {
     this.projects = this.config.text.Projects.projects;
     this.loading = false;
+    this.techs = [this.config.text.Projects.type.freelance[this.selectedLanguage], this.config.text.Projects.type.personal[this.selectedLanguage], this.config.text.Projects.type.school[this.selectedLanguage]];
   },
   methods: {
-    filterProjects(tech) {
+    filterProjects(tech) { // tech is now equal to project type
 
       document.getElementById('icon-tech-' + tech).classList.toggle('active'); // change tech icon opacity
       document.getElementById('title-tech-' + tech).classList.toggle('active'); // change tech text color

@@ -19,6 +19,20 @@
             "fr": "voir-le-blog",
             "en": "view-blog"
         },
+        "type": {
+            "freelance": {
+                "fr": "Freelance",
+                "en": "Freelance"
+            },
+            "personal": {
+                "fr": "Personnel",
+                "en": "Personal"
+            },
+            "school": {
+                "fr": "Étude",
+                "en": "School"
+            }
+        },
         "projects": {
             "1": {
                 "title": {
@@ -34,7 +48,7 @@
                     "en": "Personal project"
                 },
                 "img": "/images/projects/thurii.png",
-                "tech": ["PHP", "SQL"],
+                "tech": ["personal"],
                 "url": "https://github.com/Bouboule-Corp",
                 "article": "/article?title=thurii"
             },
@@ -52,7 +66,7 @@
                     "en": "Personal project"
                 },
                 "img": "/images/projects/monkey.png",
-                "tech": ["Vue", "PHP", "SQL"],
+                "tech": ["personal"],
                 "url": "https://github.com/ArthurBoucard/Infinite-Typing-Monkey",
                 "article": "/article?title=infinite-typping-monkey"
             },
@@ -67,12 +81,149 @@
                 },
                 "type": {
                     "fr": "Projet étudiant",
-                    "en": "Study project"
+                    "en": "School project"
                 },
                 "img": "/images/projects/air-quality.png",
-                "tech": ["Arduino", "SQL"],
+                "tech": ["school"],
                 "url": "https://github.com/ArthurBoucard/Air-Quality-Monitor",
                 "article": "/article?title=air-quality-monitor"
+            },
+            "4": {
+                "title": {
+                    "fr": "HTop",
+                    "en": "HTop"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "School project"
+                },
+                "img": "/images/projects/htop.png",
+                "tech": ["school"],
+                "url": "https://github.com/ArthurBoucard/HTop"
+            },
+            "5": {
+                "title": {
+                    "fr": "Bomberman",
+                    "en": "Bomberman"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "School project"
+                },
+                "img": "/images/projects/bomberman.png",
+                "tech": ["school"],
+                "url": "https://github.com/ArthurBoucard/Bomberman-IndieStudio"
+            },
+            "6": {
+                "title": {
+                    "fr": "Redditech",
+                    "en": "Redditech"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "School project"
+                },
+                "img": "/images/projects/redditech.png",
+                "tech": ["school"],
+                "url": "https://github.com/ArthurBoucard/Redditech"
+            },
+            "7": {
+                "title": {
+                    "fr": "Fractal Tree",
+                    "en": "Fractal Tree"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet personnel",
+                    "en": "Personal project"
+                },
+                "img": "/images/projects/fractal.png",
+                "tech": ["school"],
+                "url": "https://github.com/ArthurBoucard/Fractal_Tree"
+            },
+            "8": {
+                "title": {
+                    "fr": "Dante Star",
+                    "en": "Dante Star"
+                
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "School project"
+                },
+                "img": "/images/projects/dante.png",
+                "tech": ["school"],
+                "url": "https://github.com/ArthurBoucard/Dante_Star"
+            },
+            "9": {
+                "title": {
+                    "fr": "MyRPG",
+                    "en": "MyRPG"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "School project"
+                },
+                "img": "/images/projects/rpg.png",
+                "tech": ["school"],
+                "url": "https://github.com/ArthurBoucard/MyRPG"
+            },
+            "10": {
+                "title": {
+                    "fr": "MySokoban",
+                    "en": "MySokoban"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "School project"
+                },
+                "img": "/images/projects/sokoban.png",
+                "tech": ["school"],
+                "url": "https://github.com/ArthurBoucard/MySokoban"
+            },
+            "11": {
+                "title": {
+                    "fr": "Matchstick Game",
+                    "en": "Matchstick Game"
+                },
+                "description": {
+                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
+                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                },
+                "type": {
+                    "fr": "Projet étudiant",
+                    "en": "School project"
+                },
+                "img": "/images/projects/matchstick.png",
+                "tech": ["school"],
+                "url": "https://github.com/ArthurBoucard/CPE_matchstick"
             }
         }
     },
