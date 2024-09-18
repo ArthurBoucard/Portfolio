@@ -50,6 +50,7 @@
                 "img": "/images/projects/thurii.png",
                 "tech": ["personal"],
                 "url": "https://github.com/Bouboule-Corp",
+                "url-type": "github",
                 "article": "/article?title=thurii"
             },
             "2": {
@@ -68,6 +69,7 @@
                 "img": "/images/projects/monkey.png",
                 "tech": ["personal"],
                 "url": "https://github.com/ArthurBoucard/Infinite-Typing-Monkey",
+                "url-type": "github",
                 "article": "/article?title=infinite-typping-monkey"
             },
             "3": {
@@ -86,6 +88,7 @@
                 "img": "/images/projects/air-quality.png",
                 "tech": ["school"],
                 "url": "https://github.com/ArthurBoucard/Air-Quality-Monitor",
+                "url-type": "github",
                 "article": "/article?title=air-quality-monitor"
             },
             "4": {
@@ -103,7 +106,8 @@
                 },
                 "img": "/images/projects/htop.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/HTop"
+                "url": "https://github.com/ArthurBoucard/HTop",
+                "url-type": "github"
             },
             "5": {
                 "title": {
@@ -120,7 +124,8 @@
                 },
                 "img": "/images/projects/bomberman.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/Bomberman-IndieStudio"
+                "url": "https://github.com/ArthurBoucard/Bomberman-IndieStudio",
+                "url-type": "github"
             },
             "6": {
                 "title": {
@@ -137,7 +142,8 @@
                 },
                 "img": "/images/projects/redditech.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/Redditech"
+                "url": "https://github.com/ArthurBoucard/Redditech",
+                "url-type": "github"
             },
             "7": {
                 "title": {
@@ -154,7 +160,8 @@
                 },
                 "img": "/images/projects/fractal.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/Fractal_Tree"
+                "url": "https://github.com/ArthurBoucard/Fractal_Tree",
+                "url-type": "github"
             },
             "8": {
                 "title": {
@@ -172,7 +179,8 @@
                 },
                 "img": "/images/projects/dante.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/Dante_Star"
+                "url": "https://github.com/ArthurBoucard/Dante_Star",
+                "url-type": "github"
             },
             "9": {
                 "title": {
@@ -189,7 +197,8 @@
                 },
                 "img": "/images/projects/rpg.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/MyRPG"
+                "url": "https://github.com/ArthurBoucard/MyRPG",
+                "url-type": "github"
             },
             "10": {
                 "title": {
@@ -206,7 +215,8 @@
                 },
                 "img": "/images/projects/sokoban.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/MySokoban"
+                "url": "https://github.com/ArthurBoucard/MySokoban",
+                "url-type": "github"
             },
             "11": {
                 "title": {
@@ -223,7 +233,8 @@
                 },
                 "img": "/images/projects/matchstick.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/CPE_matchstick"
+                "url": "https://github.com/ArthurBoucard/CPE_matchstick",
+                "url-type": "github"
             }
         }
     },
