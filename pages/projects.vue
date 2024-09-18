@@ -70,15 +70,18 @@
                 </p>
                 <div class="flex justify-between items-center">
                   <div class="flex justify-between items-center">
-                    <a id="view-button" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
+                    <a v-if="project.article" id="view-button" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
                       <NuxtLink :to="project.article">
                         {{ config.text.Projects.view[selectedLanguage] }}
                       </NuxtLink>
                     </a>
                   </div>
                   <div class="flex">
-                    <a id="project-github" :href="project.url" target="_blank" class="hover:opacity-75">
+                    <a v-if="project.github_url" id="project-github" :href="project.github_url" target="_blank" class="hover:opacity-75">
                       <img src="/icons/social/github.svg">
+                    </a>
+                    <a v-if="project.web_url" id="project-github" :href="project.web_url" target="_blank" class="hover:opacity-75">
+                      <img src="/icons/social/web.svg">
                     </a>
                   </div>
                 </div>

@@ -49,8 +49,6 @@
                 },
                 "img": "/images/projects/thurii.png",
                 "tech": ["personal"],
-                "url": "https://github.com/Bouboule-Corp",
-                "url-type": "github",
                 "article": "/article?title=thurii"
             },
             "2": {
@@ -68,8 +66,8 @@
                 },
                 "img": "/images/projects/monkey.png",
                 "tech": ["personal"],
-                "url": "https://github.com/ArthurBoucard/Infinite-Typing-Monkey",
-                "url-type": "github",
+                "github_url": "https://github.com/ArthurBoucard/Infinite-Typing-Monkey",
+                "web_url": "https://infinite-typing-monkey.vercel.app/",
                 "article": "/article?title=infinite-typping-monkey"
             },
             "3": {
@@ -87,8 +85,7 @@
                 },
                 "img": "/images/projects/air-quality.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/Air-Quality-Monitor",
-                "url-type": "github",
+                "github_url": "https://github.com/ArthurBoucard/Air-Quality-Monitor",
                 "article": "/article?title=air-quality-monitor"
             },
             "4": {
@@ -97,8 +94,8 @@
                     "en": "HTop"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Reproduction de la command HTOP en C++ avec la librairie Ncurses et SFML.",
+                    "en": "Reproduction of the HTOP command in C++ with the Ncurses and SFML library."
                 },
                 "type": {
                     "fr": "Projet étudiant",
@@ -106,8 +103,7 @@
                 },
                 "img": "/images/projects/htop.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/HTop",
-                "url-type": "github"
+                "github_url": "https://github.com/ArthurBoucard/HTop"
             },
             "5": {
                 "title": {
@@ -115,8 +111,8 @@
                     "en": "Bomberman"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Un Bomberman en C++ avec la librairie Raylib. Avec un multijoueur local ou contre des ordinateurs.",
+                    "en": "A Bomberman in C++ with the Raylib library. With local multiplayer or against computers."
                 },
                 "type": {
                     "fr": "Projet étudiant",
@@ -124,8 +120,7 @@
                 },
                 "img": "/images/projects/bomberman.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/Bomberman-IndieStudio",
-                "url-type": "github"
+                "github_url": "https://github.com/ArthurBoucard/Bomberman-IndieStudio"
             },
             "6": {
                 "title": {
@@ -133,8 +128,8 @@
                     "en": "Redditech"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Une application en React Native utilisant l'API Reddit",
+                    "en": "An application in React Native using the Reddit API"
                 },
                 "type": {
                     "fr": "Projet étudiant",
@@ -142,8 +137,7 @@
                 },
                 "img": "/images/projects/redditech.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/Redditech",
-                "url-type": "github"
+                "github_url": "https://github.com/ArthurBoucard/Redditech"
             },
             "7": {
                 "title": {
@@ -151,8 +145,8 @@
                     "en": "Fractal Tree"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Créateur d'arbre fractal fait avec python en utilisant Turtle.",
+                    "en": "Fractal Tree maker made with python using turtle."
                 },
                 "type": {
                     "fr": "Projet personnel",
@@ -160,8 +154,7 @@
                 },
                 "img": "/images/projects/fractal.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/Fractal_Tree",
-                "url-type": "github"
+                "github_url": "https://github.com/ArthurBoucard/Fractal_Tree"
             },
             "8": {
                 "title": {
@@ -170,8 +163,8 @@
                 
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Générateur et solveur de labyrinthe en C.",
+                    "en": "Maze generator and solver in C."
                 },
                 "type": {
                     "fr": "Projet étudiant",
@@ -179,8 +172,7 @@
                 },
                 "img": "/images/projects/dante.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/Dante_Star",
-                "url-type": "github"
+                "github_url": "https://github.com/ArthurBoucard/Dante_Star"
             },
             "9": {
                 "title": {
@@ -188,8 +180,8 @@
                     "en": "MyRPG"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Un petit RPG fait en C avec la librairie CSFML, en utilisant Tiled pour faire les cartes.",
+                    "en": "A small RPG made in C with the CSFML lib, using Tiled to make the maps."
                 },
                 "type": {
                     "fr": "Projet étudiant",
@@ -197,8 +189,7 @@
                 },
                 "img": "/images/projects/rpg.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/MyRPG",
-                "url-type": "github"
+                "github_url": "https://github.com/ArthurBoucard/MyRPG"
             },
             "10": {
                 "title": {
@@ -206,8 +197,8 @@
                     "en": "MySokoban"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Jeu de Sokoban fait avec ncurses en C.",
+                    "en": "Sokoban game made with ncurses in C."
                 },
                 "type": {
                     "fr": "Projet étudiant",
@@ -215,8 +206,7 @@
                 },
                 "img": "/images/projects/sokoban.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/MySokoban",
-                "url-type": "github"
+                "github_url": "https://github.com/ArthurBoucard/MySokoban"
             },
             "11": {
                 "title": {
@@ -224,8 +214,8 @@
                     "en": "Matchstick Game"
                 },
                 "description": {
-                    "fr": "Duis aute irure dolor in velit esse cillum dolore.",
-                    "en": "Duis aute irure dolor in velit esse cillum dolore."
+                    "fr": "Le jeu des allumettes contre un ordinateur en C.",
+                    "en": "The game of matchstick against a computer in C."
                 },
                 "type": {
                     "fr": "Projet étudiant",
@@ -233,8 +223,7 @@
                 },
                 "img": "/images/projects/matchstick.png",
                 "tech": ["school"],
-                "url": "https://github.com/ArthurBoucard/CPE_matchstick",
-                "url-type": "github"
+                "github_url": "https://github.com/ArthurBoucard/CPE_matchstick"
             }
         }
     },
