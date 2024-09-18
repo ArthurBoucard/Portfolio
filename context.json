@@ -49,7 +49,7 @@
                 },
                 "img": "/images/projects/thurii.png",
                 "tech": ["personal"],
-                "article": "/article?title=thurii"
+                "article": "thurii"
             },
             "2": {
                 "title": {
@@ -68,7 +68,7 @@
                 "tech": ["personal"],
                 "github_url": "https://github.com/ArthurBoucard/Infinite-Typing-Monkey",
                 "web_url": "https://infinite-typing-monkey.vercel.app/",
-                "article": "/article?title=infinite-typping-monkey"
+                "article": "infinite-typping-monkey"
             },
             "3": {
                 "title": {
@@ -86,7 +86,7 @@
                 "img": "/images/projects/air-quality.png",
                 "tech": ["school"],
                 "github_url": "https://github.com/ArthurBoucard/Air-Quality-Monitor",
-                "article": "/article?title=air-quality-monitor"
+                "article": "air-quality-monitor"
             },
             "4": {
                 "title": {

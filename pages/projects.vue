@@ -71,7 +71,7 @@
                 <div class="flex justify-between items-center">
                   <div class="flex justify-between items-center">
                     <a v-if="project.article" id="view-button" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
-                      <NuxtLink :to="project.article">
+                      <NuxtLink :to="`/article?title=${project.article}`">
                         {{ config.text.Projects.view[selectedLanguage] }}
                       </NuxtLink>
                     </a>

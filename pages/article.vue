@@ -2,7 +2,7 @@
   <main class="page">
     <div class="scroll-area">
       <div class="markdown-container">
-        <MarkdownViewer :fileName="'/articles/' + $route.query.title" />
+        <MarkdownViewer :fileName="'articles/' + $route.query.title" />
       </div>
     </div>
   </main>
