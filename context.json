@@ -36,6 +36,57 @@
         "projects": {
             "1": {
                 "title": {
+                    "fr": "The New Black",
+                    "en": "The New Black"
+                },
+                "description": {
+                    "fr": "Site de fashion design avec IA - Amélioration de l'API. Gestion des serveurs et mise en production. Création d’un dashboard de suivi.",
+                    "en": "AI Fashion Design website - API improvement. Server management and production deployment. Created a resource tracking dashboard."
+                },
+                "type": {
+                    "fr": "Freelance",
+                    "en": "Freelance"
+                },
+                "img": "/images/projects/newblack.png",
+                "tech": ["freelance"],
+                "web_url": "https://thenewblack.ai/"
+            },
+            "2": {
+                "title": {
+                    "fr": "Edit Your Film",
+                    "en": "Edit Your Film"
+                },
+                "description": {
+                    "fr": "Plateforme de mise en relation avec des monteurs vidéo - Refonte de l'API et migration des bases de données. Gestion des flux vidéo. Implémentation de devis.",
+                    "en": "Video editor matchmaking platform - API redesign and database migration. Handling of video streams. Implemented quotes system."
+                },
+                "type": {
+                    "fr": "Freelance",
+                    "en": "Freelance"
+                },
+                "img": "/images/projects/eyf.png",
+                "tech": ["freelance"],
+                "web_url": "https://edityour.film/"
+            },
+            "3": {
+                "title": {
+                    "fr": "AACM",
+                    "en": "AACM"
+                },
+                "description": {
+                    "fr": "Asian Association for Contract Management  - Maintenance du site, mise à jour régulière du contenu. Création de backup et audit de sécurité.",
+                    "en": "Asian Association for Contract Management - Site maintenance, regular content updates. Created backups and performed security audits."
+                },
+                "type": {
+                    "fr": "Freelance",
+                    "en": "Freelance"
+                },
+                "img": "/images/projects/aacm.png",
+                "tech": ["freelance"],
+                "web_url": "https://www.aacm.asia/"
+            },
+            "4": {
+                "title": {
                     "fr": "Thurii",
                     "en": "Thurii"
                 },
@@ -51,14 +102,14 @@
                 "tech": ["personal"],
                 "article": "thurii"
             },
-            "2": {
+            "5": {
                 "title": {
                     "fr": "Paradoxe du singe savant",
                     "en": "Infinite Typing Monkey"
                 },
                 "description": {
-                    "fr": "Site web reprenant le paradoxe du singe savant.",
-                    "en": "Website taking up the concept of the monkey writing infinitely."
+                    "fr": "Site web démontrant le paradoxe du singe savant.",
+                    "en": "Website demonstrating the concept of the infinite yyping monkey."
                 },
                 "type": {
                     "fr": "Projet personnel",
@@ -70,7 +121,7 @@
                 "web_url": "https://infinite-typing-monkey.vercel.app/",
                 "article": "infinite-typping-monkey"
             },
-            "3": {
+            "6": {
                 "title": {
                     "fr": "Capteur de qualité d'air",
                     "en": "Air Quality Monitor"
@@ -88,7 +139,7 @@
                 "github_url": "https://github.com/ArthurBoucard/Air-Quality-Monitor",
                 "article": "air-quality-monitor"
             },
-            "4": {
+            "7": {
                 "title": {
                     "fr": "HTop",
                     "en": "HTop"
@@ -105,7 +156,7 @@
                 "tech": ["school"],
                 "github_url": "https://github.com/ArthurBoucard/HTop"
             },
-            "5": {
+            "8": {
                 "title": {
                     "fr": "Bomberman",
                     "en": "Bomberman"
@@ -122,7 +173,7 @@
                 "tech": ["school"],
                 "github_url": "https://github.com/ArthurBoucard/Bomberman-IndieStudio"
             },
-            "6": {
+            "9": {
                 "title": {
                     "fr": "Redditech",
                     "en": "Redditech"
@@ -139,7 +190,7 @@
                 "tech": ["school"],
                 "github_url": "https://github.com/ArthurBoucard/Redditech"
             },
-            "7": {
+            "10": {
                 "title": {
                     "fr": "Fractal Tree",
                     "en": "Fractal Tree"
@@ -156,7 +207,7 @@
                 "tech": ["school"],
                 "github_url": "https://github.com/ArthurBoucard/Fractal_Tree"
             },
-            "8": {
+            "11": {
                 "title": {
                     "fr": "Dante Star",
                     "en": "Dante Star"
@@ -174,7 +225,7 @@
                 "tech": ["school"],
                 "github_url": "https://github.com/ArthurBoucard/Dante_Star"
             },
-            "9": {
+            "12": {
                 "title": {
                     "fr": "MyRPG",
                     "en": "MyRPG"
@@ -191,7 +242,7 @@
                 "tech": ["school"],
                 "github_url": "https://github.com/ArthurBoucard/MyRPG"
             },
-            "10": {
+            "13": {
                 "title": {
                     "fr": "MySokoban",
                     "en": "MySokoban"
@@ -208,7 +259,7 @@
                 "tech": ["school"],
                 "github_url": "https://github.com/ArthurBoucard/MySokoban"
             },
-            "11": {
+            "14": {
                 "title": {
                     "fr": "Matchstick Game",
                     "en": "Matchstick Game"
