@@ -100,6 +100,7 @@
                 },
                 "img": "/images/projects/thurii.png",
                 "tech": ["personal"],
+                "web_url": "https://thurii.fr",
                 "article": "thurii"
             },
             "5": {
@@ -118,7 +119,7 @@
                 "img": "/images/projects/monkey.png",
                 "tech": ["personal"],
                 "github_url": "https://github.com/ArthurBoucard/Infinite-Typing-Monkey",
-                "web_url": "https://infinite-typing-monkey.vercel.app/",
+                "web_url": "https://infinite-typing-monkey.arthurboucard.com/",
                 "article": "infinite-typping-monkey"
             },
             "6": {
